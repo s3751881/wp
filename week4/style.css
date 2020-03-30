@@ -1,0 +1,18 @@
+p+p {
+    color: blue
+}
+p+p+p{
+    color: red;
+}
+a:link {
+    color:darkred
+}
+a:visited{
+    color:pink;
+}
+a:hover {
+    color: green;
+}
+a:active{
+    color: red;
+}
