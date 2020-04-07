@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang='en'>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Assignment 2</title>
@@ -45,940 +46,1062 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon+SC&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
-    
+
     <!-- Keep wireframe.css for debugging, add your css to style.css -->
-    <link id='wireframecss' type="text/css" rel="stylesheet" href="../wireframe.css" disabled> 
+    <link id='wireframecss' type="text/css" rel="stylesheet" href="../wireframe.css" disabled>
     <link id='stylecss' type="text/css" rel="stylesheet" href="../style.css">
 
     <script src='../wireframe.js'></script>
-  </head>
+</head>
 
-  <body>
+<body>
 
     <header>
-      <h1><span>CINEMAX</span></h1>
+        <h1><span>CINEMAX</span></h1>
         <h3>Bring the best experience</h3>
     </header>
-<!-- Navigation bar-->
+    <!-- Navigation bar-->
     <div class="sticky-section">
-      <div id="logo">CINEMAX</div>
-      <nav>
-          <a href='#aboutus'>About Us</a>
-          <a href="#price">Price</a>
-          <a href="#nowshowing">Now showing</a>
-          <a href="#logo">Home</a>
-      </nav>
-  </div>
+        <div id="logo">CINEMAX</div>
+        <nav>
+            <a href='#aboutus'>About Us</a>
+            <a href="#price">Price</a>
+            <a href="#nowshowing">Now showing</a>
+            <a href="#logo">Home</a>
+        </nav>
+    </div>
 
-  <main>
-      <section id="aboutus">
-        <div class="container-fluid"
-            style="margin-top:20px;margin-bottom: 5px;border: black;color:white;background-color: black;height: 50px;text-align: center;">
-            <a style="font-family: 'Abril Fatface', cursive;font-weight: 700;font-size: 30px;"> CINEMAX - ABOUT US</a>
-        </div>
-        <div class="container" style="margin-top: 25px;margin-bottom:50px">
-            <div class="row">
-                <div class="col-md-12">
-                    <h4 style="margin-bottom:40px;border-bottom: 3px;border-color: black;text-align: center;"> Click
-                        below picture
-                        to see our new innovations</h4>
-                </div>
-                <div class="col-md-3">
-                    <img src="image/aboutus/pic1.jpeg" style="width:250px;height:250px"
-                        onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
-                    <div class="productdes">
-                        <p> New lounge for comfortable waiting time</p>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <img src="image/aboutus/pic2.jpeg" style="width:250px;height:250px"
-                        onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
-                    <div class="productdes">
-                        <a href="#newseat"> Find out more about innovative chairs</a>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <img src="image/aboutus/pic3.jpg" style="width:250px;height:250px"
-                        onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
-                    <div class="productdes">
-                        <a href="#projectionandsound"> Amazing 3D projection and sound system</a>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <img src="image/aboutus/pic4.jpeg" style="width:250px;height:250px"
-                        onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
-                    <div class="productdes">
-                        <p> Our new building look after the closure </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="myModal" class="modal">
-            <div class="modal-content">
-                <div>
-                    <span class="close cursor" onclick="closeModal()">&times;</span>
-                    <div class="mySlides">
-                        <div class="numbertext"> 1 / 4</div>
-                        <img src="image/aboutus/pic1big.jpeg" class="img-fluid" style="width:800px;height: 470px;">
-                    </div>
-                    <div class="mySlides">
-                        <div class="numbertext">2 / 4</div>
-                        <img src="image/aboutus/pic2big.jpg" class="img-fluid">
-                    </div>
-                    <div class="mySlides">
-                        <div class="numbertext">3 / 4</div>
-                        <img src="image/aboutus/pic3big.jpeg" class="img-fluid">
-                    </div>
-                    <div class="mySlides">
-                        <div class="numbertext">4 / 4</div>
-                        <img src="image/aboutus/pic4big.jpeg" class="img-fluid">
-                    </div>
-
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-                    <div class="caption">
-                        <p id="caption"></p>
-                    </div>
-                    <div class="column">
-                        <img class="demo-cursor" src="image/aboutus/pic1.jpeg" onclick="currentSlide(1)"
-                            alt="Nature and sunrise">
-                    </div>
-                    <div class="column">
-                        <img class="demo-cursor" src="image/aboutus/pic2.jpeg" onclick="currentSlide(2)" alt="Snow">
-                    </div>
-                    <div class="column">
-                        <img class="demo-cursor" src="image/aboutus/pic3.jpeg" onclick="currentSlide(3)"
-                            alt="Mountains and fjords">
-                    </div>
-                    <div class="column">
-                        <img class="demo-cursor" src="image/aboutus/pic4.jpeg" onclick="currentSlide(4)"
-                            alt="Northern Lights">
-                    </div>
-                </div>
-            </div>
-            <br>
-        </div>
-        <div class="container-fluid" id="innoseat" style="background-color: #0D0D0D;">
-            <div class="row">
-                <div class="col-md-7">
-                    <p style="padding:20px;font-family: 'Oswald', sans-serif;color: white;">The cinema has reopened
-                        after extensive
-                        improvements
-                        and renovations.
-                        There are new seats: standard seats and reclinable first class seats
-                        The projection and sound systems are upgraded with 3D Dolby Vision projection and Dolby Atmos
-                        sound. </p>
-                </div>
-                <div class="col-md-5">
-                    <img src="image/closeforinno.jpeg" style="max-width: 100%;height: auto;padding:10%"
-                        id="closeforinno">
-                </div>
-
-            </div>
-        </div>
-
-        <div class="jumbotron jumbotron-fluid" style="background-color: #BFBFBF" id='jumbotronchairspre'>
-            <div class="container">
-                <h1 class="display-4">New chairs option for standard and first
-                    class seats.
-                </h1>
-                <p class="lead">An electric recliner specifically designed for theatres where capacity and comfort are
-                    equally
-                    important, the backrest of the Verona 'Zero Wall' reclines into the space vacated by the seat moving
-                    forward.
-                </p>
-            </div>
-        </div>
-        <div class="container-fluid" id="innoseat" style="margin-bottom:20px">
-            <div class="row">
-                <div class="col-sm-6">
-                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel"
-                        style="margin-top:10px;color:black;">
-                        <ol class="carousel-indicators">
-                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-                        </ol>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img class="d-block w-100" src="image/aboutus/slide4.jpg" alt="First slide">
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="image/aboutus/slide5.jpg" alt="Second slide">
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="image/aboutus/slide1.jpg" alt="Third slide">
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="image/aboutus/slide2.jpg" alt="Third slide">
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="image/aboutus/veronazerowall_17.jpg" alt="Third slide">
-                            </div>
-                        </div>
-                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
-                            data-slide="prev" style="color: black;">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
-                            data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="col-md-6" id="seatpremiuminfo">
-                    <p style="font-size: 25px;"> BRILLIANT MOVIES TIME WITH
-                        FIRST CLASS SEAT - VERONA ZERO WALL </p>
-                    <p> Performance, practicality and style are
-                        beautifully combined to enhance the cinematic experience
-                        and exceed
-                        the expectations of even the most demanding movie-goers.
-                    </p>
-
-                    <p>The Zero Wall is available as a twin, linked
-                        or a single seat. Armrest options include a
-                        retractable centre
-                        armrest or a centre console with a wooden table. The seat is perfect for siting in front of
-                        walls or in
-                        privacy booths.</p>
-                    <h5> Notice features</h5>
-                    <div class="col-sm-6">
-                        <ul>
-                            <li> Luxurious aesthetic</li>
-                            <li> Space saving features</li>
-                            <li> Luxurious aesthetic</li>
-                            <li> Fast and smooth operation, only require 8 sec. to fully recline the backrest </li>
-                            <li> Available as a twin seat option</li>
-
-                        </ul>
-                    </div>
-                    <div class="col-sm-6">
-                        <ul>
-                            <li> Footrest sensor </li>
-                            <li> Underseat lighting</li>
-                            <li> Autoreturn footrest</li>
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
+    <main>
+        <section id="aboutus">
             <div class="container-fluid"
-                style="background-color:#f0f5f9;font-family: 'Roboto Condensed', sans-serif; border-radius: 2px;border-color: black; ">
+                style="margin-top:20px;margin-bottom: 5px;border: black;color:white;background-color: black;height: 50px;text-align: center;">
+                <a style="font-family: 'Abril Fatface', cursive;font-weight: 700;font-size: 30px;"> CINEMAX - ABOUT
+                    US</a>
+            </div>
+            <div class="container" style="margin-top: 25px;margin-bottom:50px">
                 <div class="row">
                     <div class="col-md-12">
-                        <h4 style="font-weight: 900;text-align: center;margin: 25px;"> OPTIONS</h4>
+                        <h4 style="margin-bottom:40px;border-bottom: 3px;border-color: black;text-align: center;"> Click
+                            below picture
+                            to see our new innovations</h4>
                     </div>
-                    <div class="col-md-6" style="padding-left: 25%; margin-bottom: 25px;">
-                        <ul>
-                            <li>Aisle Lighting</li>
-                            <li>Removable Covers</li>
-                            <li>ProBax®</li>
-                            <li>Privacy Panel</li>
+                    <div class="col-md-3">
+                        <img src="image/aboutus/pic1.jpeg" style="width:250px;height:250px"
+                            onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+                        <div class="productdes">
+                            <p> New lounge for comfortable waiting time</p>
+                        </div>
                     </div>
-                    <div class="col-md-6" style="padding-right:15%;margin-bottom: 25px;">
-                        <ul>
-                            <li>LED Numbering and Lettering</li>
-                            <li>Wireless Phone Charger</li>
-                            <li>Dual USB Port</li>
-                            <li>Call Button System</li>
-                        </ul>
+                    <div class="col-md-3">
+                        <img src="image/aboutus/pic2.jpeg" style="width:250px;height:250px"
+                            onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+                        <div class="productdes">
+                            <a href="#newseat"> Find out more about innovative chairs</a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="image/aboutus/pic3.jpg" style="width:250px;height:250px"
+                            onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+                        <div class="productdes">
+                            <a href="#projectionandsound"> Amazing 3D projection and sound system</a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="image/aboutus/pic4.jpeg" style="width:250px;height:250px"
+                            onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+                        <div class="productdes">
+                            <p> Our new building look after the closure </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <div>
+                        <span class="close cursor" onclick="closeModal()">&times;</span>
+                        <div class="mySlides">
+                            <div class="numbertext"> 1 / 4</div>
+                            <img src="image/aboutus/pic1big.jpeg" class="img-fluid" style="width:800px;height: 470px;">
+                        </div>
+                        <div class="mySlides">
+                            <div class="numbertext">2 / 4</div>
+                            <img src="image/aboutus/pic2big.jpg" class="img-fluid">
+                        </div>
+                        <div class="mySlides">
+                            <div class="numbertext">3 / 4</div>
+                            <img src="image/aboutus/pic3big.jpeg" class="img-fluid">
+                        </div>
+                        <div class="mySlides">
+                            <div class="numbertext">4 / 4</div>
+                            <img src="image/aboutus/pic4big.jpeg" class="img-fluid">
+                        </div>
+
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                        <div class="caption">
+                            <p id="caption"></p>
+                        </div>
+                        <div class="column">
+                            <img class="demo-cursor" src="image/aboutus/pic1.jpeg" onclick="currentSlide(1)"
+                                alt="Nature and sunrise">
+                        </div>
+                        <div class="column">
+                            <img class="demo-cursor" src="image/aboutus/pic2.jpeg" onclick="currentSlide(2)" alt="Snow">
+                        </div>
+                        <div class="column">
+                            <img class="demo-cursor" src="image/aboutus/pic3.jpeg" onclick="currentSlide(3)"
+                                alt="Mountains and fjords">
+                        </div>
+                        <div class="column">
+                            <img class="demo-cursor" src="image/aboutus/pic4.jpeg" onclick="currentSlide(4)"
+                                alt="Northern Lights">
+                        </div>
+                    </div>
+                </div>
+                <br>
+            </div>
+            <div class="container-fluid" id="innoseat" style="background-color: #0D0D0D;">
+                <div class="row">
+                    <div class="col-md-7">
+                        <p style="padding:20px;font-family: 'Oswald', sans-serif;color: white; text-align:center; padding-top: 18%; font-size: 20px;">Welcome back to
+                            Cinemax’s website after a long time for renovations. We are now back with the more upgraded
+                            features that would definitely satisfy you and bring you the best experience when you come
+                            to us. We purchase the new sets of cinema seating: Standard and First class, install new 3D
+                            projection facilities, and new system of Dolby lighting and sound. So, come and join us!
+                        </p>
+                    </div>
+                    <div class="col-md-5">
+                        <img src="image/closeforinno.jpeg" style="max-width: 100%;height: auto;padding:10%"
+                            id="closeforinno">
                     </div>
 
                 </div>
             </div>
-        </div>
-        </div>
-        <div class="jumbotron jumbotron-fluid" id="jumbotronsoundandpro">
-            <div class="container">
-                <h1 class="display-4">Dobly ATMOS and Dobly 3D projection
-                </h1>
-                <p class="lead">An electric recliner specifically designed for theatres where capacity and comfort are
-                    equally
-                    important, the backrest of the Verona 'Zero Wall' reclines into the space vacated by the seat moving
-                    forward.
-                </p>
-            </div>
-        </div>
-        <div class="container-fluid" id="projectionandsound" style="margin-bottom:20px">
-            <div class="row">
-                <div class="col-md-6"
-                    style="height:100px;background-color: #595959;font-size: 40px;text-align: center;padding-top: 20px;">
-                    <a href="#sound"> DOBLY ATMOS</a>
-                </div>
-                <div class="col-md-6"
-                    style="height:100px;background-color: #8C8C8C;font-size: 40px;padding-left: 35px;text-align: center;padding-top: 20px;">
-                    <a href="#3Dprojection"> DOBLY 3D </a>
-                </div>
-            </div>
 
-        </div>
-        <div class="sound" id="sound">
-            <div class="row">
-                <div class="col-md-12">
-                    <h3 style="text-align: center;"> DOLBY ATMOS</h3>
-                    <p style="text-align: center;">Dolby Atmos transports you into the story with moving audio that
-                        flows all around you with breathtaking realism.</p>
-                </div>
-
-            </div>
-        </div>
-        <div class="container-fluid">
-            <div style="position:relative;width:100%;display:inline-block;"><iframe controls loop autoplay muted
-                    src="https://flowplayer.com/e/?t=%0A%09Dolby%20Atmos%0A&c=eyJkZWJ1ZyI6ZmFsc2UsImRpc2FibGVkIjpmYWxzZSwiZnVsbHNjcmVlbiI6dHJ1ZSwia2V5Ym9hcmQiOnRydWUsInJhdGlvIjowLjU2MjUsImFkYXB0aXZlUmF0aW8iOmZhbHNlLCJydG1wIjowLCJwcm94eSI6ImJlc3QiLCJobHNRdWFsaXRpZXMiOnRydWUsInNlZWtTdGVwIjpmYWxzZSwic3BsYXNoIjp0cnVlLCJsaXZlIjpmYWxzZSwibGl2ZVBvc2l0aW9uT2Zmc2V0IjoxMjAsInN3ZiI6Ii9zd2YvZmxvd3BsYXllci5zd2YiLCJzd2ZIbHMiOiIvc3dmL2Zsb3dwbGF5ZXJobHMuc3dmIiwic3BlZWRzIjpbMC4yNSwwLjUsMSwxLjUsMl0sInRvb2x0aXAiOmZhbHNlLCJtb3VzZW91dFRpbWVvdXQiOjUwMDAsIm11dGVkQXV0b3BsYXkiOnRydWUsInZvbHVtZSI6MSwiZXJyb3JzIjpbIiIsIlZpZGVvIGxvYWRpbmcgYWJvcnRlZCIsIk5ldHdvcmsgZXJyb3IiLCJWaWRlbyBub3QgcHJvcGVybHkgZW5jb2RlZCIsIlZpZGVvIGZpbGUgbm90IGZvdW5kIiwiVW5zdXBwb3J0ZWQgdmlkZW8iLCJTa2luIG5vdCBmb3VuZCIsIlNXRiBmaWxlIG5vdCBmb3VuZCIsIlN1YnRpdGxlcyBub3QgZm91bmQiLCJJbnZhbGlkIFJUTVAgVVJMIiwiVW5zdXBwb3J0ZWQgdmlkZW8gZm9ybWF0LiBUcnkgaW5zdGFsbGluZyBBZG9iZSBGbGFzaC4iXSwiZXJyb3JVcmxzIjpbIiIsIiIsIiIsIiIsIiIsIiIsIiIsIiIsIiIsIiIsImh0dHA6Ly9nZXQuYWRvYmUuY29tL2ZsYXNocGxheWVyLyJdLCJwbGF5bGlzdCI6W10sImhsc0ZpeCI6ZmFsc2UsImRpc2FibGVJbmxpbmUiOmZhbHNlLCJlbWJlZCI6dHJ1ZSwid21vZGUiOiJvcGFxdWUiLCJrZXkiOiIkNDc3MzE5MzI4NzY5MDU2IiwibmF0aXZlX2Z1bGxzY3JlZW4iOnRydWUsImNsaXAiOnsicHJlbG9hZCI6Im5vbmUiLCJzdWJ0aXRsZXMiOltdLCJzb3VyY2VzIjpbeyJzcmMiOiJodHRwOi8vZG9sYnlobHMtYS5ha2FtYWloZC5uZXQvdXMvZW4vZG9sYnktYXRtb3MtZXhwbGFpbmVyL2FhYy9BdG1vcy1Db3JlLUV4cGxhaW5lcl8yMzk4X2FhYy5tM3U4Iiwic3VmZml4IjoibTN1OCIsInR5cGUiOiJhcHBsaWNhdGlvbi94LW1wZWd1cmwifSx7InNyYyI6Imh0dHA6Ly9kb3dubG9hZC5kb2xieS5jb20vdXMvZW4vdGVjaG5vbG9neS9kb2xieS1hdG1vcy1jb3JlLWV4cGxhaW5lci5tcDQiLCJzdWZmaXgiOiJtcDQiLCJ0eXBlIjoidmlkZW8vbXA0In1dfSwiYW5hbHl0aWNzIjoiVUEtMjgxMjc1MS0xIiwic3JjUGhvbmVIaWdocmVzIjoiL3VwbG9hZGVkSW1hZ2VzL3d3d2RvbGJ5Y29tL0NvbnRlbnQvUGxhdGZvcm1zL0RvbGJ5X0F0bW9zL2RvbGJ5LWF0bW9zLWV4cGxhaW5lZC5qcGciLCJzcmNUYWJsZXRIaWdocmVzIjoiL3VwbG9hZGVkSW1hZ2VzL3d3d2RvbGJ5Y29tL0NvbnRlbnQvUGxhdGZvcm1zL0RvbGJ5X0F0bW9zL2RvbGJ5LWF0bW9zLWV4cGxhaW5lZC5qcGciLCJzcmNEZXNrdG9wSGlnaHJlcyI6Ii91cGxvYWRlZEltYWdlcy93d3dkb2xieWNvbS9Db250ZW50L1BsYXRmb3Jtcy9Eb2xieV9BdG1vcy9kb2xieS1hdG1vcy1leHBsYWluZWQuanBnIiwic3JjUGhvbmUiOiIvdXBsb2FkZWRJbWFnZXMvd3d3ZG9sYnljb20vQ29udGVudC9QbGF0Zm9ybXMvRG9sYnlfQXRtb3MvZG9sYnktYXRtb3MtZXhwbGFpbmVkLmpwZyIsInNyY1RhYmxldCI6Ii91cGxvYWRlZEltYWdlcy93d3dkb2xieWNvbS9Db250ZW50L1BsYXRmb3Jtcy9Eb2xieV9BdG1vcy9kb2xieS1hdG1vcy1leHBsYWluZWQuanBnIiwic3JjRGVza3RvcCI6Ii91cGxvYWRlZEltYWdlcy93d3dkb2xieWNvbS9Db250ZW50L1BsYXRmb3Jtcy9Eb2xieV9BdG1vcy9kb2xieS1hdG1vcy1leHBsYWluZWQuanBnIiwiaG9zdG5hbWUiOiJ3d3cuZG9sYnkuY29tIiwib3JpZ2luIjoiaHR0cHM6Ly93d3cuZG9sYnkuY29tL3VzL2VuL2JyYW5kcy9kb2xieS1hdG1vcy5odG1sIiwianMiOltdLCJjc3MiOltdfQ%3D%3D&r=https%3A%2F%2Fwww.dolby.com%2Fus%2Fen%2Fbrands%2Fdolby-atmos.html"
-                    allowfullscreen style="border:none;position:absolute;top:0;left:0;width:100%;height:100%;">
-                </iframe>
-                <div style="padding-top:56.25%;"></div>
-            </div>
-            <div class="row" style="font-family: 'Roboto Mono', ;">
-                <div class="col-md-12" style="margin: 20px; margin-top: 50px;">
-                    <h3> Dolby Atmos Redefines Your Entertainment Experience</h3>
-
-                </div>
-                <div class="col-md-6" style="margin-top: 50px;">
-                    <ul>
-                        <li style="font-size: 23px; padding-right:10%;">Moves sound all around you</li>
-
-                    </ul>
-                    <p style="padding-left: 5%;">Rather than being constrained to channels, sounds can be precisely
-                        placed and moved in
-                        three-dimensional space.</p>
-                </div>
-                <div class="col-md-6" style="margin-top: 50px;">
-                    <ul>
-                        <li style="font-size: 23px; padding-right:15%">Produces breathtaking sound quality</li>
-
-                    </ul>
-                    <p style="padding-left: 5%;">Dolby Atmos renders everything from dialogue to quiet scenes to
-                        whirlwind action with astonishing
-                        clarity, richness, detail, and depth.</p>
-                </div>
-                <div class="col-md-6" style="margin-top: 50px;">
-                    <ul>
-                        <li style="font-size: 23px; padding-right:15%">Adds an overhead dimension</li>
-
-                    </ul>
-                    <p style="padding-left: 5%;">A new sensation of height immerses you in the action, creating a full
-                        audio atmosphere and
-                        realistically depicting objects moving overhead.</p>
-                </div>
-                <div class="col-md-6" style="margin-top: 50px;">
-                    <ul>
-                        <li style="font-size: 23px; padding-right:10%">Creates a powerfully moving entertainment
-                            experience</li>
-
-                    </ul>
-                    <p style="padding-left: 5%;">It all comes together in sound that excites your senses and inspires
-                        your emotions to deliver the
-                        full impact of entertainment.</p>
-                </div>
-            </div>
-        </div>
-        <div class="sound" id="3Dprojection" style="background-color: #c9d6df; margin-top: 25px;padding: 25px;">
-            <div class="row">
-                <div class="col-md-12">
-                    <h3 style="text-align: center;"> DOLBY 3D PROJECTION</h3>
-                    <p style="text-align: center;">Dolby 3D comprises two systems: glasses-free 3D for TVs, PCs, and
-                        portable devices; and a unique digital cinema technology. Both systems deliver sharp, vivid
-                        images with exceptional color fidelity and realistic 3D effects.
-
+            <div class="jumbotron jumbotron-fluid" style="background-color: #BFBFBF" id='jumbotronchairspre'>
+                <div class="container">
+                    <h1 class="display-4">New chairs option for standard and first
+                        class seats.
+                    </h1>
+                    <p class="lead">An electric recliner specifically designed for theatres where capacity and comfort
+                        are
+                        equally
+                        important, the backrest of the Verona 'Zero Wall' reclines into the space vacated by the seat
+                        moving
+                        forward.
                     </p>
                 </div>
+            </div>
+            <div class="container-fluid" id="innoseat" style="margin-bottom:20px">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel"
+                            style="margin-top:10px;color:black;">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="d-block w-100" src="image/aboutus/slide4.jpg" alt="First slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="image/aboutus/slide5.jpg" alt="Second slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="image/aboutus/slide1.jpg" alt="Third slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="image/aboutus/slide2.jpg" alt="Third slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="image/aboutus/veronazerowall_17.jpg"
+                                        alt="Third slide">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
+                                data-slide="prev" style="color: black;">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
+                                data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6" id="seatpremiuminfo">
+                        <p style="font-size: 25px;"> BRILLIANT MOVIES TIME WITH
+                            FIRST CLASS SEAT - VERONA ZERO WALL </p>
+                        <p> Performance, practicality and style are
+                            beautifully combined to enhance the cinematic experience
+                            and exceed
+                            the expectations of even the most demanding movie-goers.
+                        </p>
+
+                        <p>The Zero Wall is available as a twin, linked
+                            or a single seat. Armrest options include a
+                            retractable centre
+                            armrest or a centre console with a wooden table. The seat is perfect for siting in front of
+                            walls or in
+                            privacy booths.</p>
+                        <h5> Notice features</h5>
+                        <div class="col-sm-6">
+                            <ul>
+                                <li> Luxurious aesthetic</li>
+                                <li> Space saving features</li>
+                                <li> Luxurious aesthetic</li>
+                                <li> Fast and smooth operation, only require 8 sec. to fully recline the backrest </li>
+                                <li> Available as a twin seat option</li>
+
+                            </ul>
+                        </div>
+                        <div class="col-sm-6">
+                            <ul>
+                                <li> Footrest sensor </li>
+                                <li> Underseat lighting</li>
+                                <li> Autoreturn footrest</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="container-fluid"
+                    style="background-color:#f0f5f9;font-family: 'Roboto Condensed', sans-serif; border-radius: 2px;border-color: black; ">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h4 style="font-weight: 900;text-align: center;margin: 25px;"> OPTIONS</h4>
+                        </div>
+                        <div class="col-md-6" style="padding-left: 25%; margin-bottom: 25px;">
+                            <ul>
+                                <li>Aisle Lighting</li>
+                                <li>Removable Covers</li>
+                                <li>ProBax®</li>
+                                <li>Privacy Panel</li>
+                        </div>
+                        <div class="col-md-6" style="padding-right:15%;margin-bottom: 25px;">
+                            <ul>
+                                <li>LED Numbering and Lettering</li>
+                                <li>Wireless Phone Charger</li>
+                                <li>Dual USB Port</li>
+                                <li>Call Button System</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="jumbotron jumbotron-fluid" id="jumbotronsoundandpro">
+                <div class="container">
+                    <h1 class="display-4">Dobly ATMOS and Dobly 3D projection
+                    </h1>
+                    <p class="lead">An electric recliner specifically designed for theatres where capacity and comfort
+                        are
+                        equally
+                        important, the backrest of the Verona 'Zero Wall' reclines into the space vacated by the seat
+                        moving
+                        forward.
+                    </p>
+                </div>
+            </div>
+            <div class="container-fluid" id="projectionandsound" style="margin-bottom:20px">
+                <div class="row">
+                    <div class="col-md-6"
+                        style="height:100px;background-color: #595959;font-size: 40px;text-align: center;padding-top: 20px;">
+                        <a href="#sound"> DOBLY ATMOS</a>
+                    </div>
+                    <div class="col-md-6"
+                        style="height:100px;background-color: #8C8C8C;font-size: 40px;padding-left: 35px;text-align: center;padding-top: 20px;">
+                        <a href="#3Dprojection"> DOBLY 3D </a>
+                    </div>
+                </div>
 
             </div>
-        </div>
-        <div class="container-fluid" style="background-color: #c9d6df;">
-            <div style="position:relative;width:100%;display:inline-block;"><iframe
-                    style="border:none;position:absolute;top:0;left:0;width:100%;height:100%;"
-                    src="https://www.youtube.com/embed/k43hWU96FRg" frameborder="0"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-                <div style="padding-top:56.25%;"></div>
+            <div class="sound" id="sound">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 style="text-align: center;"> DOLBY ATMOS</h3>
+                        <p style="text-align: center;">Dolby Atmos transports you into the story with moving audio that
+                            flows all around you with breathtaking realism.</p>
+                    </div>
+
+                </div>
             </div>
+            <div class="container-fluid">
+                <div style="position:relative;width:100%;display:inline-block;"><iframe controls loop autoplay muted
+                        src="https://flowplayer.com/e/?t=%0A%09Dolby%20Atmos%0A&c=eyJkZWJ1ZyI6ZmFsc2UsImRpc2FibGVkIjpmYWxzZSwiZnVsbHNjcmVlbiI6dHJ1ZSwia2V5Ym9hcmQiOnRydWUsInJhdGlvIjowLjU2MjUsImFkYXB0aXZlUmF0aW8iOmZhbHNlLCJydG1wIjowLCJwcm94eSI6ImJlc3QiLCJobHNRdWFsaXRpZXMiOnRydWUsInNlZWtTdGVwIjpmYWxzZSwic3BsYXNoIjp0cnVlLCJsaXZlIjpmYWxzZSwibGl2ZVBvc2l0aW9uT2Zmc2V0IjoxMjAsInN3ZiI6Ii9zd2YvZmxvd3BsYXllci5zd2YiLCJzd2ZIbHMiOiIvc3dmL2Zsb3dwbGF5ZXJobHMuc3dmIiwic3BlZWRzIjpbMC4yNSwwLjUsMSwxLjUsMl0sInRvb2x0aXAiOmZhbHNlLCJtb3VzZW91dFRpbWVvdXQiOjUwMDAsIm11dGVkQXV0b3BsYXkiOnRydWUsInZvbHVtZSI6MSwiZXJyb3JzIjpbIiIsIlZpZGVvIGxvYWRpbmcgYWJvcnRlZCIsIk5ldHdvcmsgZXJyb3IiLCJWaWRlbyBub3QgcHJvcGVybHkgZW5jb2RlZCIsIlZpZGVvIGZpbGUgbm90IGZvdW5kIiwiVW5zdXBwb3J0ZWQgdmlkZW8iLCJTa2luIG5vdCBmb3VuZCIsIlNXRiBmaWxlIG5vdCBmb3VuZCIsIlN1YnRpdGxlcyBub3QgZm91bmQiLCJJbnZhbGlkIFJUTVAgVVJMIiwiVW5zdXBwb3J0ZWQgdmlkZW8gZm9ybWF0LiBUcnkgaW5zdGFsbGluZyBBZG9iZSBGbGFzaC4iXSwiZXJyb3JVcmxzIjpbIiIsIiIsIiIsIiIsIiIsIiIsIiIsIiIsIiIsIiIsImh0dHA6Ly9nZXQuYWRvYmUuY29tL2ZsYXNocGxheWVyLyJdLCJwbGF5bGlzdCI6W10sImhsc0ZpeCI6ZmFsc2UsImRpc2FibGVJbmxpbmUiOmZhbHNlLCJlbWJlZCI6dHJ1ZSwid21vZGUiOiJvcGFxdWUiLCJrZXkiOiIkNDc3MzE5MzI4NzY5MDU2IiwibmF0aXZlX2Z1bGxzY3JlZW4iOnRydWUsImNsaXAiOnsicHJlbG9hZCI6Im5vbmUiLCJzdWJ0aXRsZXMiOltdLCJzb3VyY2VzIjpbeyJzcmMiOiJodHRwOi8vZG9sYnlobHMtYS5ha2FtYWloZC5uZXQvdXMvZW4vZG9sYnktYXRtb3MtZXhwbGFpbmVyL2FhYy9BdG1vcy1Db3JlLUV4cGxhaW5lcl8yMzk4X2FhYy5tM3U4Iiwic3VmZml4IjoibTN1OCIsInR5cGUiOiJhcHBsaWNhdGlvbi94LW1wZWd1cmwifSx7InNyYyI6Imh0dHA6Ly9kb3dubG9hZC5kb2xieS5jb20vdXMvZW4vdGVjaG5vbG9neS9kb2xieS1hdG1vcy1jb3JlLWV4cGxhaW5lci5tcDQiLCJzdWZmaXgiOiJtcDQiLCJ0eXBlIjoidmlkZW8vbXA0In1dfSwiYW5hbHl0aWNzIjoiVUEtMjgxMjc1MS0xIiwic3JjUGhvbmVIaWdocmVzIjoiL3VwbG9hZGVkSW1hZ2VzL3d3d2RvbGJ5Y29tL0NvbnRlbnQvUGxhdGZvcm1zL0RvbGJ5X0F0bW9zL2RvbGJ5LWF0bW9zLWV4cGxhaW5lZC5qcGciLCJzcmNUYWJsZXRIaWdocmVzIjoiL3VwbG9hZGVkSW1hZ2VzL3d3d2RvbGJ5Y29tL0NvbnRlbnQvUGxhdGZvcm1zL0RvbGJ5X0F0bW9zL2RvbGJ5LWF0bW9zLWV4cGxhaW5lZC5qcGciLCJzcmNEZXNrdG9wSGlnaHJlcyI6Ii91cGxvYWRlZEltYWdlcy93d3dkb2xieWNvbS9Db250ZW50L1BsYXRmb3Jtcy9Eb2xieV9BdG1vcy9kb2xieS1hdG1vcy1leHBsYWluZWQuanBnIiwic3JjUGhvbmUiOiIvdXBsb2FkZWRJbWFnZXMvd3d3ZG9sYnljb20vQ29udGVudC9QbGF0Zm9ybXMvRG9sYnlfQXRtb3MvZG9sYnktYXRtb3MtZXhwbGFpbmVkLmpwZyIsInNyY1RhYmxldCI6Ii91cGxvYWRlZEltYWdlcy93d3dkb2xieWNvbS9Db250ZW50L1BsYXRmb3Jtcy9Eb2xieV9BdG1vcy9kb2xieS1hdG1vcy1leHBsYWluZWQuanBnIiwic3JjRGVza3RvcCI6Ii91cGxvYWRlZEltYWdlcy93d3dkb2xieWNvbS9Db250ZW50L1BsYXRmb3Jtcy9Eb2xieV9BdG1vcy9kb2xieS1hdG1vcy1leHBsYWluZWQuanBnIiwiaG9zdG5hbWUiOiJ3d3cuZG9sYnkuY29tIiwib3JpZ2luIjoiaHR0cHM6Ly93d3cuZG9sYnkuY29tL3VzL2VuL2JyYW5kcy9kb2xieS1hdG1vcy5odG1sIiwianMiOltdLCJjc3MiOltdfQ%3D%3D&r=https%3A%2F%2Fwww.dolby.com%2Fus%2Fen%2Fbrands%2Fdolby-atmos.html"
+                        allowfullscreen style="border:none;position:absolute;top:0;left:0;width:100%;height:100%;">
+                    </iframe>
+                    <div style="padding-top:56.25%;"></div>
+                </div>
+                <div class="row" style="font-family: 'Roboto Mono', ;">
+                    <div class="col-md-12" style="margin: 20px; margin-top: 50px;">
+                        <h3> Dolby Atmos Redefines Your Entertainment Experience</h3>
+
+                    </div>
+                    <div class="col-md-6" style="margin-top: 50px;">
+                        <ul>
+                            <li style="font-size: 23px; padding-right:10%;">Moves sound all around you</li>
+
+                        </ul>
+                        <p style="padding-left: 5%;">Rather than being constrained to channels, sounds can be precisely
+                            placed and moved in
+                            three-dimensional space.</p>
+                    </div>
+                    <div class="col-md-6" style="margin-top: 50px;">
+                        <ul>
+                            <li style="font-size: 23px; padding-right:15%">Produces breathtaking sound quality</li>
+
+                        </ul>
+                        <p style="padding-left: 5%;">Dolby Atmos renders everything from dialogue to quiet scenes to
+                            whirlwind action with astonishing
+                            clarity, richness, detail, and depth.</p>
+                    </div>
+                    <div class="col-md-6" style="margin-top: 50px;">
+                        <ul>
+                            <li style="font-size: 23px; padding-right:15%">Adds an overhead dimension</li>
+
+                        </ul>
+                        <p style="padding-left: 5%;">A new sensation of height immerses you in the action, creating a
+                            full
+                            audio atmosphere and
+                            realistically depicting objects moving overhead.</p>
+                    </div>
+                    <div class="col-md-6" style="margin-top: 50px;">
+                        <ul>
+                            <li style="font-size: 23px; padding-right:10%">Creates a powerfully moving entertainment
+                                experience</li>
+
+                        </ul>
+                        <p style="padding-left: 5%;">It all comes together in sound that excites your senses and
+                            inspires
+                            your emotions to deliver the
+                            full impact of entertainment.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="sound" id="3Dprojection" style="background-color: #c9d6df; margin-top: 25px;padding: 25px;">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 style="text-align: center;"> DOLBY 3D PROJECTION</h3>
+                        <p style="text-align: center;">Dolby 3D comprises two systems: glasses-free 3D for TVs, PCs, and
+                            portable devices; and a unique digital cinema technology. Both systems deliver sharp, vivid
+                            images with exceptional color fidelity and realistic 3D effects.
+
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="container-fluid" style="background-color: #c9d6df;">
+                <div style="position:relative;width:100%;display:inline-block;"><iframe
+                        style="border:none;position:absolute;top:0;left:0;width:100%;height:100%;"
+                        src="https://www.youtube.com/embed/k43hWU96FRg" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <div style="padding-top:56.25%;"></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12" style=" margin-top: 35px;margin-bottom: 35px;padding-left: 10%;">
+                        <h3> Dolby Atmos Redefines Your Entertainment Experience</h3>
+
+                    </div>
+                    <div class="col-md-6" style="margin-top: 20px;">
+                        <ul>
+                            <li style="font-size: 23px; padding-right:15%">Spectacular 3D Picture</li>
+
+                        </ul>
+                        <p style="padding-left: 5%;">The most important aspect of any 3D technology is the picture, and
+                            Dolby® 3D delivers. You'll
+                            enjoy vivid images with realistic depth and exceptional clarity</p>
+                    </div>
+                    <div class="col-md-6" style="margin-top: 20px;">
+                        <ul>
+                            <li style="font-size: 23px; padding-right:15%;padding-left: 5%;">Full Resolution</li>
+
+                        </ul>
+                        <p style="padding-left: 5%;">Other 3D systems deliver only half-resolution to each eye. Dolby 3D
+                            upgrades these signals to
+                            full-resolution 3D for both glasses-free and traditional glasses-based 3D. You'll enjoy a
+                            much
+                            sharper picture.</p>
+                    </div>
+                    <div class="col-md-6" style="margin-top: 30px;">
+                        <ul>
+                            <li style="font-size: 23px; padding-right:10%">3D on Your TV, Laptop, or Mobile Device</li>
+
+                        </ul>
+                        <p style="padding-left: 5%;">Dolby 3D works on any 3D device: TV, tablet, laptop, or smartphone.
+                            It
+                            automatically optimizes 3D
+                            content for the specific device and screen size.</p>
+                    </div>
+                    <div class="col-md-6" style="margin-top: 30px;">
+                        <ul>
+                            <li style="font-size: 23px; padding-right:10%">At Last—Social 3D</li>
+
+                        </ul>
+                        <p style="padding-left: 5%;">Sit anywhere in the room for great 3D on your TV. You can have
+                            friends
+                            over and not have to crowd
+                            into one small area—or deal with annoying glasses.</p>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+        </section>
+        <section id="price">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12" style="height:100px">
+                        <h3
+                            style="text-align: center; padding:25px;font-family: 'Abril Fatface', cursive;font-size: 40px;background-color: #ffffff;">
+                            Pricing Section</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid" id="price">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="pricing">
+                            <div class="seat_type_standard">Standard<br /> Adult<br />(STA)</div>
+                            <div class="sale_price"><span class="price">$14.00</span><br />All day Monday and Wednesday
+                                & 12pm
+                                on
+                                Weekdays</div>
+                            <div class="normal_price"><span class="price">$19.80</span><br />At other times</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="pricing">
+                            <div class="seat_type_standard">Standard<br />Concession<br />(STP)</div>
+                            <div class="sale_price"><span class="price">$12.50</span><br />All day Monday and Wednesday
+                                & 12pm
+                                on
+                                Weekdays</div>
+                            <div class="normal_price"><span class="price">$17.50</span><br />At other times</div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="pricing">
+                            <div class="seat_type_standard">Standard<br />Child<br />(STC)</div>
+                            <div class="sale_price"><span class="price">$11.00</span><br />All day Monday and Wednesday
+                                & 12pm
+                                on
+                                Weekdays</div>
+                            <div class="normal_price"><span class="price">$15.30</span><br />At other times</div>
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="col-sm-4">
+                        <div class="pricing">
+                            <div class="seat_type_firstclass">First Class<br />Concession<br />(FCP)</div>
+                            <div class="sale_price" style="background-color: #222222;"><span
+                                    class="price">$24.00</span><br />All day Monday and Wednesday & 12pm on
+                                Weekdays</div>
+                            <div class="normal_price" style="background-color: #414141;"><span
+                                    class="price">$30.00</span><br />At other times</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="pricing">
+                            <div class="seat_type_firstclass">First Class<br />Adult<br />(FCA)</div>
+                            <div class="sale_price" style="background-color: #222222;"><span
+                                    class="price">$22.50</span><br />All day Monday and Wednesday & 12pm on
+                                Weekdays</div>
+                            <div class="normal_price" style="background-color: #414141;"><span
+                                    class="price">$27.00</span><br />At other times</div>
+                        </div>
+
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="pricing">
+                            <div class="seat_type_firstclass">First Class<br />Child<br />(FCC)</div>
+                            <div class="sale_price" style="background-color: #222222;"><span
+                                    class="price">$21.00</span><br />All day Monday and Wednesday & 12pm on
+                                Weekdays</div>
+                            <div class="normal_price" style="background-color: #414141;"><span
+                                    class="price">$24.00</span><br />At other times</div>
+                        </div>
+
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </section>
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-md-12" style=" margin-top: 35px;margin-bottom: 35px;padding-left: 10%;">
-                    <h3> Dolby Atmos Redefines Your Entertainment Experience</h3>
-
-                </div>
-                <div class="col-md-6" style="margin-top: 20px;">
-                    <ul>
-                        <li style="font-size: 23px; padding-right:15%">Spectacular 3D Picture</li>
-
-                    </ul>
-                    <p style="padding-left: 5%;">The most important aspect of any 3D technology is the picture, and
-                        Dolby® 3D delivers. You'll
-                        enjoy vivid images with realistic depth and exceptional clarity</p>
-                </div>
-                <div class="col-md-6" style="margin-top: 20px;">
-                    <ul>
-                        <li style="font-size: 23px; padding-right:15%;padding-left: 5%;">Full Resolution</li>
-
-                    </ul>
-                    <p style="padding-left: 5%;">Other 3D systems deliver only half-resolution to each eye. Dolby 3D
-                        upgrades these signals to
-                        full-resolution 3D for both glasses-free and traditional glasses-based 3D. You'll enjoy a much
-                        sharper picture.</p>
-                </div>
-                <div class="col-md-6" style="margin-top: 30px;">
-                    <ul>
-                        <li style="font-size: 23px; padding-right:10%">3D on Your TV, Laptop, or Mobile Device</li>
-
-                    </ul>
-                    <p style="padding-left: 5%;">Dolby 3D works on any 3D device: TV, tablet, laptop, or smartphone. It
-                        automatically optimizes 3D
-                        content for the specific device and screen size.</p>
-                </div>
-                <div class="col-md-6" style="margin-top: 30px;">
-                    <ul>
-                        <li style="font-size: 23px; padding-right:10%">At Last—Social 3D</li>
-
-                    </ul>
-                    <p style="padding-left: 5%;">Sit anywhere in the room for great 3D on your TV. You can have friends
-                        over and not have to crowd
-                        into one small area—or deal with annoying glasses.</p>
+                <div class="col-md-12" style="height:100px">
+                    <h3 style="text-align: center; padding:25px;font-family: 'Abril Fatface', cursive;font-size: 40px;">
+                        Now
+                        Showing</h3>
                 </div>
             </div>
         </div>
 
-        </div>
-    </section>
-<section id="price">
-  <div class="container-fluid">
-    <div class="row">
-        <div class="col-md-12" style="height:100px">
-            <h3 style="text-align: center; padding:25px;font-family: 'Abril Fatface', cursive;font-size: 40px;background-color: #ffffff;">
-                Pricing Section</h3>
-        </div>
-    </div>
-  </div>
-    <div class="container-fluid" id="price">
-        <div class="row">
-            <div class="col-sm-4">
-                <div class="pricing">
-                    <div class="seat_type_standard">Standard<br /> Adult<br />(STA)</div>
-                    <div class="sale_price"><span class="price">$14.00</span><br />All day Monday and Wednesday & 12pm
-                        on
-                        Weekdays</div>
-                    <div class="normal_price"><span class="price">$19.80</span><br />At other times</div>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="pricing">
-                    <div class="seat_type_standard">Standard<br />Concession<br />(STP)</div>
-                    <div class="sale_price"><span class="price">$12.50</span><br />All day Monday and Wednesday & 12pm
-                        on
-                        Weekdays</div>
-                    <div class="normal_price"><span class="price">$17.50</span><br />At other times</div>
-                </div>
-            </div>
-
-            <div class="col-sm-4">
-                <div class="pricing">
-                    <div class="seat_type_standard">Standard<br />Child<br />(STC)</div>
-                    <div class="sale_price"><span class="price">$11.00</span><br />All day Monday and Wednesday & 12pm
-                        on
-                        Weekdays</div>
-                    <div class="normal_price"><span class="price">$15.30</span><br />At other times</div>
-                </div>
-
-            </div>
-
-
-
-            <div class="col-sm-4">
-                <div class="pricing">
-                    <div class="seat_type_firstclass">First Class<br />Concession<br />(FCP)</div>
-                    <div class="sale_price" style="background-color: #222222;"><span
-                            class="price">$24.00</span><br />All day Monday and Wednesday & 12pm on
-                        Weekdays</div>
-                    <div class="normal_price" style="background-color: #414141;"><span
-                            class="price">$30.00</span><br />At other times</div>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="pricing">
-                    <div class="seat_type_firstclass">First Class<br />Adult<br />(FCA)</div>
-                    <div class="sale_price" style="background-color: #222222;"><span
-                            class="price">$22.50</span><br />All day Monday and Wednesday & 12pm on
-                        Weekdays</div>
-                    <div class="normal_price" style="background-color: #414141;"><span
-                            class="price">$27.00</span><br />At other times</div>
-                </div>
-
-            </div>
-            <div class="col-sm-4">
-                <div class="pricing">
-                    <div class="seat_type_firstclass">First Class<br />Child<br />(FCC)</div>
-                    <div class="sale_price" style="background-color: #222222;"><span
-                            class="price">$21.00</span><br />All day Monday and Wednesday & 12pm on
-                        Weekdays</div>
-                    <div class="normal_price" style="background-color: #414141;"><span
-                            class="price">$24.00</span><br />At other times</div>
-                </div>
-
-            </div>
-
-
-
-
-        </div>
-      </div>
-</section>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12" style="height:100px">
-                <h3 style="text-align: center; padding:25px;font-family: 'Abril Fatface', cursive;font-size: 40px;">Now
-                    Showing</h3>
-            </div>
-        </div>
-    </div>
-
-    <section class="container-fluid" style="background-color: #595959;">
-        <div class="col-sm-12" style=" margin-top:7.5px; padding-top: 5px;padding-bottom: 5px;">
-            <div class=" d-flex row justify-content-center my-3">
-                <div class="col-xs-5 col-md-5 col-sm-12 mx-2 "
-                    style="background-color: #8C8C8C; padding-top: 8px;padding-bottom: 8px;">
-                    <div class="row px-1">
-                        <div class="col-sm-6">
-                            <img src="image/engame.jpeg"
-                                style="max-width: 100%;height: auto; border: black 2px solid; object-fit: cover;">
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="movie-name">
-                                <h4 style="font-weight:700;">Avengers: Endgame</h4>
-
-                            </div>
-                            <div class="movie-info">
-                                <div class="movie-schedule">Showing schedule</div>
-                                <p>
-
-                                    <br />Wednesday: 9pm (T21)
-                                    <br />Thursday: 9pm (T21)
-                                    <br />Friday 9pm (T21)
-                                    <br />Saturday: 6pm (T18)
-                                    <br />Sunday: 6pm (T18)
-                                </p>
-                            </div>
-                            <button type="button" class="btn btn-light" style="font-family: 'Oswald', sans-serif;" data-toggle="modal"
-                                data-target=".bd-example-modal-lg">More Details</button>
-
-                            <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog"
-                                aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                                <div class="modal-dialog modal-xl">
-                                    <div class="modal-content"  style="background-image: url(image/background-grey-synopsis.jpg); background-size: cover; color:#c0c0c1">
-                                        <div class="row">
-                                            <div class="col-sm-9">
-                                                <h5 class="modal-title" id="exampleModalLabel" style="font-size: 40px; color:#d2cd9d;padding-left: 20px;">
-                                                    Avengers: Endgame <span style="margin-left:100px" ;>PG</span></h5>
-                                            </div>
-                                        </div>
-                                        <div class="row" style="border-bottom: 1px solid black; border-top: 1px solid black;">
-                                            <div class="col-sm-4" style="padding-top: 4%; padding-bottom: 4%;padding-left: 2%;">
-                                                <h7 style="font-size: 36px; color: #d2cd9d;padding-left: 4%;">Plot Description</h7>
-                                                <p style="text-align: justify; color: #f5f5f5;padding-left: 20px;">Avengers: Endgame picks up after the events
-                                                    of
-                                                    Avengers:
-                                                    Infinity War, which saw the Avengers
-                                                    divided and defeated. Thanos won the day and used the Infinity Stones to
-                                                    snap away
-                                                    half
-                                                    of
-                                                    all life in the universe. Only the original Avengers - Iron Man, Captain
-                                                    America,
-                                                    Thor,
-                                                    Hulk, Black Widow, and Hawkeye remain, along with some key allies like War
-                                                    Machine,
-                                                    Ant-Man,
-                                                    Rocket Raccoon, Nebula, and Captain Marvel. Each of the survivors deals with
-                                                    the
-                                                    fallout
-                                                    from Thanos' decimation in different ways, but when an opportunity presents
-                                                    itself
-                                                    to
-                                                    potentially save those who vanished, they all come together and set out to
-                                                    defeat
-                                                    Thanos,
-                                                    once and for all.</p>
-                                            </div>
-                                            <div class="col-sm-8">
-                                                <iframe style="padding-top: 8%; padding-bottom: 2%;padding-right: 2%;" width="100%" height="400"
-                                                    src="https://www.youtube.com/embed/TcMBFSGVi1c" frameborder="0"
-                                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                                    allowfullscreen></iframe>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-sm-3"><label style="margin: 4% 0 0 0; font-size: 20px; color:#d2cd9d;padding-left: 4%;">Make a booking:</label>
-                                            </div>
-                                            <div class="col-sm-9" style="color:black;">
-                                                <button type="button" class="btn btn-secondary"
-                                                    style="margin: 2% 2% 2% 0;">Wednesday: 9pm</button>
-                                                <button type="button" class="btn btn-secondary"
-                                                    style="margin: 2% 2% 2% 0;">Thursday: 9pm</button>
-                                                <button type="button" class="btn btn-secondary"
-                                                    style="margin: 2% 2% 2% 0;">Friday: 9pm</button>
-                                                <button type="button" class="btn btn-secondary"
-                                                    style="margin: 2% 2% 2% 0;">Saturday: 6pm</button>
-                                                <button type="button" class="btn btn-secondary"
-                                                    style="margin: 2% 2% 2% 0;">Sunday: 6pm</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-
-                    </div>
-
-
-
-                </div>
-
-                <div class="col-xs-5 col-md-5 col-sm-12 mx-2 "
-                    style="background-color: #8C8C8C;padding-top: 8px;padding-bottom: 8px;">
-                    <div class="row px-1">
-                        <div class="col-sm-6">
-                            <img src="image/happyprince.jpeg"
-                                style="max-width: 100%;height: auto;border: black 2px solid; object-fit: cover;">
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="movie-name">
-                                <h4 style="font-weight:700;">Happy Prince</h4>
-                            </div>
-                            <div class="movie-schedule">Showing schedule</div>
-                            <div class="movie-info">
-                                <p>
-                                    <br />Wednesday: 12pm (T21)
-                                    <br />Thursday: 12pm (T21)
-                                    <br />Friday: 12pm (T21)
-                                    <br />Saturday: 9pm (T21)
-                                    <br />Sunday: 9pm (T21)
-                                </p>
-                            </div>
-                            <button type="button" class="btn btn-light" style="font-family: 'Oswald', sans-serif;" data-toggle="modal"
-                                data-target=".bd-example-modal-lg">More Details</button>
-
-                            <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog"
-                                aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                                <div class="modal-dialog modal-xl">
-                                    <div class="modal-content"  style="background-image: url(background-grey-synopsis.jpg); background-size: cover; color:#c0c0c1">
-                                        <div class="row">
-                                            <div class="col-sm-9">
-                                                <h5 class="modal-title" id="exampleModalLabel" style="font-size: 40px; color:#d2cd9d;padding-left: 20px;">
-                                                    Avengers: Endgame <span style="margin-left:100px" ;>PG</span></h5>
-                                            </div>
-                                        </div>
-                                        <div class="row" style="border-bottom: 1px solid black; border-top: 1px solid black;">
-                                            <div class="col-sm-4" style="padding-top: 4%; padding-bottom: 4%;padding-left: 2%;">
-                                                <h7 style="font-size: 36px; color: #d2cd9d;padding-left: 4%;">Plot Description</h7>
-                                                <p style="text-align: justify; color: #f5f5f5;padding-left: 20px;">Avengers: Endgame picks up after the events
-                                                    of
-                                                    Avengers:
-                                                    Infinity War, which saw the Avengers
-                                                    divided and defeated. Thanos won the day and used the Infinity Stones to
-                                                    snap away
-                                                    half
-                                                    of
-                                                    all life in the universe. Only the original Avengers - Iron Man, Captain
-                                                    America,
-                                                    Thor,
-                                                    Hulk, Black Widow, and Hawkeye remain, along with some key allies like War
-                                                    Machine,
-                                                    Ant-Man,
-                                                    Rocket Raccoon, Nebula, and Captain Marvel. Each of the survivors deals with
-                                                    the
-                                                    fallout
-                                                    from Thanos' decimation in different ways, but when an opportunity presents
-                                                    itself
-                                                    to
-                                                    potentially save those who vanished, they all come together and set out to
-                                                    defeat
-                                                    Thanos,
-                                                    once and for all.</p>
-                                            </div>
-                                            <div class="col-sm-8">
-                                                <iframe style="padding-top: 8%; padding-bottom: 2%;padding-right: 2%;" width="100%" height="400"
-                                                    src="https://www.youtube.com/embed/TcMBFSGVi1c" frameborder="0"
-                                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                                    allowfullscreen></iframe>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-sm-3"><label style="margin: 4% 0 0 0; font-size: 20px; color:#d2cd9d;padding-left: 4%;">Make a booking:</label>
-                                            </div>
-                                            <div class="col-sm-9" style="color:black;">
-                                                <button type="button" class="btn btn-secondary"
-                                                    style="margin: 2% 2% 2% 0;">Wednesday: 9pm</button>
-                                                <button type="button" class="btn btn-secondary"
-                                                    style="margin: 2% 2% 2% 0;">Thursday: 9pm</button>
-                                                <button type="button" class="btn btn-secondary"
-                                                    style="margin: 2% 2% 2% 0;">Friday: 9pm</button>
-                                                <button type="button" class="btn btn-secondary"
-                                                    style="margin: 2% 2% 2% 0;">Saturday: 6pm</button>
-                                                <button type="button" class="btn btn-secondary"
-                                                    style="margin: 2% 2% 2% 0;">Sunday: 6pm</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-            <div style=" margin-top:7.5px;">
+        <section class="container-fluid" style="background-color: #595959;">
+            <div class="col-sm-12" style=" margin-top:7.5px; padding-top: 5px;padding-bottom: 5px;">
                 <div class=" d-flex row justify-content-center my-3">
                     <div class="col-xs-5 col-md-5 col-sm-12 mx-2 "
-                        style="background-color: #8C8C8C;padding-top: 8px;padding-bottom: 8px;">
+                        style="background-color: #8C8C8C; padding-top: 8px;padding-bottom: 8px;">
                         <div class="row px-1">
                             <div class="col-sm-6">
-                                <img src="image/topendwedding.jpeg"
+                                <img src="image/engame.jpeg"
                                     style="max-width: 100%;height: auto; border: black 2px solid; object-fit: cover;">
                             </div>
                             <div class="col-sm-6">
                                 <div class="movie-name">
-                                    <h4 style="font-weight:700;">Top end Weddings</h4>
+                                    <h4 style="font-weight:700;">Avengers: Endgame <span style="padding-left: 3%;">PG-13</span></h4>
                                 </div>
-                                <div class="movie-schedule">Showing schedule</div>
-
                                 <div class="movie-info">
+                                    <div class="movie-schedule">Showing schedule</div>
                                     <p>
-                                        <br />Monday: 6pm (T18)
-                                        <br />Tuesday: 6pm (T18)
-                                        <br />Saturday: 3pm (T15)
-                                        <br />Sunday: 3pm (T15)
+
+                                        <br />Wednesday: 9pm (T21)
+                                        <br />Thursday: 9pm (T21)
+                                        <br />Friday 9pm (T21)
+                                        <br />Saturday: 6pm (T18)
+                                        <br />Sunday: 6pm (T18)
                                     </p>
                                 </div>
-                                <button type="button" class="btn btn-light" style="font-family: 'Oswald', sans-serif;" data-toggle="modal"
-                                data-target=".bd-example-modal-lg">More Details</button>
+                                <button type="button" class="btn btn-light" style="font-family: 'Oswald', sans-serif;"
+                                    data-toggle="modal" data-target=".bd-example-modal-lg">More Details</button>
 
-                            <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog"
-                                aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                                <div class="modal-dialog modal-xl">
-                                    <div class="modal-content"  style="background-image: url(background-grey-synopsis.jpg); background-size: cover; color:#c0c0c1">
-                                        <div class="row">
-                                            <div class="col-sm-9">
-                                                <h5 class="modal-title" id="exampleModalLabel" style="font-size: 40px; color:#d2cd9d;padding-left: 20px;">
-                                                    Avengers: Endgame <span style="margin-left:100px" ;>PG</span></h5>
+                                <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog"
+                                    aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-xl">
+                                        <div class="modal-content"
+                                            style="background-image: url(image/background-grey-synopsis.jpg); background-size: cover; color:#c0c0c1">
+                                            <div class="row">
+                                                <div class="col-sm-9">
+                                                    <h5 class="modal-title" id="exampleModalLabel"
+                                                        style="font-size: 40px; color:#d2cd9d;padding-left: 20px;">
+                                                        Avengers: Endgame <span style="margin-left:100px" ;>PG-13</span>
+                                                    </h5>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="row" style="border-bottom: 1px solid black; border-top: 1px solid black;">
-                                            <div class="col-sm-4" style="padding-top: 4%; padding-bottom: 4%;padding-left: 2%;">
-                                                <h7 style="font-size: 36px; color: #d2cd9d;padding-left: 4%;">Plot Description</h7>
-                                                <p style="text-align: justify; color: #f5f5f5;padding-left: 20px;">Avengers: Endgame picks up after the events
-                                                    of
-                                                    Avengers:
-                                                    Infinity War, which saw the Avengers
-                                                    divided and defeated. Thanos won the day and used the Infinity Stones to
-                                                    snap away
-                                                    half
-                                                    of
-                                                    all life in the universe. Only the original Avengers - Iron Man, Captain
-                                                    America,
-                                                    Thor,
-                                                    Hulk, Black Widow, and Hawkeye remain, along with some key allies like War
-                                                    Machine,
-                                                    Ant-Man,
-                                                    Rocket Raccoon, Nebula, and Captain Marvel. Each of the survivors deals with
-                                                    the
-                                                    fallout
-                                                    from Thanos' decimation in different ways, but when an opportunity presents
-                                                    itself
-                                                    to
-                                                    potentially save those who vanished, they all come together and set out to
-                                                    defeat
-                                                    Thanos,
-                                                    once and for all.</p>
+                                            <div class="row"
+                                                style="border-bottom: 1px solid black; border-top: 1px solid black;">
+                                                <div class="col-sm-4"
+                                                    style="padding-top: 4%; padding-bottom: 4%;padding-left: 2%;">
+                                                    <h7 style="font-size: 36px; color: #d2cd9d;padding-left: 4%;">Plot
+                                                        Description</h7>
+                                                    <p style="text-align: justify; color: #f5f5f5;padding-left: 20px;">
+                                                        Avengers: Endgame picks up after the events
+                                                        of
+                                                        Avengers:
+                                                        Infinity War, which saw the Avengers
+                                                        divided and defeated. Thanos won the day and used the Infinity
+                                                        Stones to
+                                                        snap away
+                                                        half
+                                                        of
+                                                        all life in the universe. Only the original Avengers - Iron Man,
+                                                        Captain
+                                                        America,
+                                                        Thor,
+                                                        Hulk, Black Widow, and Hawkeye remain, along with some key
+                                                        allies like War
+                                                        Machine,
+                                                        Ant-Man,
+                                                        Rocket Raccoon, Nebula, and Captain Marvel. Each of the
+                                                        survivors deals with
+                                                        the
+                                                        fallout
+                                                        from Thanos' decimation in different ways, but when an
+                                                        opportunity presents
+                                                        itself
+                                                        to
+                                                        potentially save those who vanished, they all come together and
+                                                        set out to
+                                                        defeat
+                                                        Thanos,
+                                                        once and for all.</p>
+                                                </div>
+                                                <div class="col-sm-8">
+                                                    <iframe
+                                                        style="padding-top: 8%; padding-bottom: 2%;padding-right: 2%;"
+                                                        width="100%" height="400"
+                                                        src="https://www.youtube.com/embed/TcMBFSGVi1c" frameborder="0"
+                                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                                        allowfullscreen></iframe>
+                                                </div>
                                             </div>
-                                            <div class="col-sm-8">
-                                                <iframe style="padding-top: 8%; padding-bottom: 2%;padding-right: 2%;" width="100%" height="400"
-                                                    src="https://www.youtube.com/embed/TcMBFSGVi1c" frameborder="0"
-                                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                                    allowfullscreen></iframe>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-sm-3"><label style="margin: 4% 0 0 0; font-size: 20px; color:#d2cd9d;padding-left: 4%;">Make a booking:</label>
-                                            </div>
-                                            <div class="col-sm-9" style="color:black;">
-                                                <button type="button" class="btn btn-secondary"
-                                                    style="margin: 2% 2% 2% 0;">Wednesday: 9pm</button>
-                                                <button type="button" class="btn btn-secondary"
-                                                    style="margin: 2% 2% 2% 0;">Thursday: 9pm</button>
-                                                <button type="button" class="btn btn-secondary"
-                                                    style="margin: 2% 2% 2% 0;">Friday: 9pm</button>
-                                                <button type="button" class="btn btn-secondary"
-                                                    style="margin: 2% 2% 2% 0;">Saturday: 6pm</button>
-                                                <button type="button" class="btn btn-secondary"
-                                                    style="margin: 2% 2% 2% 0;">Sunday: 6pm</button>
+                                            <div class="row">
+                                                <div class="col-sm-3"><label
+                                                        style="margin: 4% 0 0 0; font-size: 20px; color:#d2cd9d;padding-left: 4%;">Make
+                                                        a booking:</label>
+                                                </div>
+                                                <div class="col-sm-9" style="color:black;">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        style="margin: 2% 2% 2% 0;">Wednesday: 9pm (T21)</button>
+                                                    <button type="button" class="btn btn-secondary"
+                                                        style="margin: 2% 2% 2% 0;">Thursday: 9pm (T21)</button>
+                                                    <button type="button" class="btn btn-secondary"
+                                                        style="margin: 2% 2% 2% 0;">Friday: 9pm (T21)</button>
+                                                    <button type="button" class="btn btn-secondary"
+                                                        style="margin: 2% 2% 2% 0;">Saturday: 6pm (T18)</button>
+                                                    <button type="button" class="btn btn-secondary"
+                                                        style="margin: 2% 2% 2% 0;">Sunday: 6pm (T18)</button>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+
                             </div>
-                            </div>
+
+
                         </div>
+
+
 
                     </div>
 
                     <div class="col-xs-5 col-md-5 col-sm-12 mx-2 "
-                        style="background-color: #8C8C8C;padding-top: 8px;padding-bottom: 8px; ">
+                        style="background-color: #8C8C8C;padding-top: 8px;padding-bottom: 8px;">
                         <div class="row px-1">
                             <div class="col-sm-6">
-                                <img src="image/dumbo.jpeg"
+                                <img src="image/happyprince.jpeg"
                                     style="max-width: 100%;height: auto;border: black 2px solid; object-fit: cover;">
                             </div>
                             <div class="col-sm-6">
                                 <div class="movie-name">
-                                    <h4 style="font-weight:700;">Dumbo</h4>
+                                    <h4 style="font-weight:700;">Happy Prince<span style="padding-left: 3%;">R</span></h4>
                                 </div>
                                 <div class="movie-schedule">Showing schedule</div>
                                 <div class="movie-info">
                                     <p>
-                                        <br />Monday : 12pm (T12)
-                                        <br />Tuesday : 12pm (T12)
-                                        <br />Wednesday : 6pm (T18)
-                                        <br />Thursday : 6pm (T18)
-                                        <br />Friday : 6pm (T18)
-                                        <br />Saturday : 12pm (T12)
-                                        <br />Sunday : 12pm (T12)
-
+                                        <br />Wednesday: 12pm (T21)
+                                        <br />Thursday: 12pm (T21)
+                                        <br />Friday: 12pm (T21)
+                                        <br />Saturday: 9pm (T21)
+                                        <br />Sunday: 9pm (T21)
                                     </p>
                                 </div>
-                                <button type="button" class="btn btn-light" style="font-family: 'Oswald', sans-serif;" data-toggle="modal"
-                                data-target=".bd-example-modal-lg">More Details</button>
+                                <button type="button" class="btn btn-light" style="font-family: 'Oswald', sans-serif;"
+                                    data-toggle="modal" data-target=".bd-example-modal-lg">More Details</button>
 
-                            <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog"
-                                aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                                <div class="modal-dialog modal-xl">
-                                    <div class="modal-content"  style="background-image: url(background-grey-synopsis.jpg); background-size: cover; color:#c0c0c1">
-                                        <div class="row">
-                                            <div class="col-sm-9">
-                                                <h5 class="modal-title" id="exampleModalLabel" style="font-size: 40px; color:#d2cd9d;padding-left: 20px;">
-                                                    Avengers: Endgame <span style="margin-left:100px" ;>PG</span></h5>
+                                <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog"
+                                    aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-xl">
+                                        <div class="modal-content"
+                                            style="background-image: url(background-grey-synopsis.jpg); background-size: cover; color:#c0c0c1">
+                                            <div class="row">
+                                                <div class="col-sm-9">
+                                                    <h5 class="modal-title" id="exampleModalLabel"
+                                                        style="font-size: 40px; color:#d2cd9d;padding-left: 20px;">
+                                                        Avengers: Endgame <span style="margin-left:100px" ;>PG-13</span>
+                                                    </h5>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="row" style="border-bottom: 1px solid black; border-top: 1px solid black;">
-                                            <div class="col-sm-4" style="padding-top: 4%; padding-bottom: 4%;padding-left: 2%;">
-                                                <h7 style="font-size: 36px; color: #d2cd9d;padding-left: 4%;">Plot Description</h7>
-                                                <p style="text-align: justify; color: #f5f5f5;padding-left: 20px;">Avengers: Endgame picks up after the events
-                                                    of
-                                                    Avengers:
-                                                    Infinity War, which saw the Avengers
-                                                    divided and defeated. Thanos won the day and used the Infinity Stones to
-                                                    snap away
-                                                    half
-                                                    of
-                                                    all life in the universe. Only the original Avengers - Iron Man, Captain
-                                                    America,
-                                                    Thor,
-                                                    Hulk, Black Widow, and Hawkeye remain, along with some key allies like War
-                                                    Machine,
-                                                    Ant-Man,
-                                                    Rocket Raccoon, Nebula, and Captain Marvel. Each of the survivors deals with
-                                                    the
-                                                    fallout
-                                                    from Thanos' decimation in different ways, but when an opportunity presents
-                                                    itself
-                                                    to
-                                                    potentially save those who vanished, they all come together and set out to
-                                                    defeat
-                                                    Thanos,
-                                                    once and for all.</p>
+                                            <div class="row"
+                                                style="border-bottom: 1px solid black; border-top: 1px solid black;">
+                                                <div class="col-sm-4"
+                                                    style="padding-top: 4%; padding-bottom: 4%;padding-left: 2%;">
+                                                    <h7 style="font-size: 36px; color: #d2cd9d;padding-left: 4%;">Plot
+                                                        Description</h7>
+                                                    <p style="text-align: justify; color: #f5f5f5;padding-left: 20px;">
+                                                        Avengers: Endgame picks up after the events
+                                                        of
+                                                        Avengers:
+                                                        Infinity War, which saw the Avengers
+                                                        divided and defeated. Thanos won the day and used the Infinity
+                                                        Stones to
+                                                        snap away
+                                                        half
+                                                        of
+                                                        all life in the universe. Only the original Avengers - Iron Man,
+                                                        Captain
+                                                        America,
+                                                        Thor,
+                                                        Hulk, Black Widow, and Hawkeye remain, along with some key
+                                                        allies like War
+                                                        Machine,
+                                                        Ant-Man,
+                                                        Rocket Raccoon, Nebula, and Captain Marvel. Each of the
+                                                        survivors deals with
+                                                        the
+                                                        fallout
+                                                        from Thanos' decimation in different ways, but when an
+                                                        opportunity presents
+                                                        itself
+                                                        to
+                                                        potentially save those who vanished, they all come together and
+                                                        set out to
+                                                        defeat
+                                                        Thanos,
+                                                        once and for all.</p>
+                                                </div>
+                                                <div class="col-sm-8">
+                                                    <iframe
+                                                        style="padding-top: 8%; padding-bottom: 2%;padding-right: 2%;"
+                                                        width="100%" height="400"
+                                                        src="https://www.youtube.com/embed/TcMBFSGVi1c" frameborder="0"
+                                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                                        allowfullscreen></iframe>
+                                                </div>
                                             </div>
-                                            <div class="col-sm-8">
-                                                <iframe style="padding-top: 8%; padding-bottom: 2%;padding-right: 2%;" width="100%" height="400"
-                                                    src="https://www.youtube.com/embed/TcMBFSGVi1c" frameborder="0"
-                                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                                    allowfullscreen></iframe>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-sm-3"><label style="margin: 4% 0 0 0; font-size: 20px; color:#d2cd9d;padding-left: 4%;">Make a booking:</label>
-                                            </div>
-                                            <div class="col-sm-9" style="color:black;">
-                                                <button type="button" class="btn btn-secondary"
-                                                    style="margin: 2% 2% 2% 0;">Wednesday: 9pm</button>
-                                                <button type="button" class="btn btn-secondary"
-                                                    style="margin: 2% 2% 2% 0;">Thursday: 9pm</button>
-                                                <button type="button" class="btn btn-secondary"
-                                                    style="margin: 2% 2% 2% 0;">Friday: 9pm</button>
-                                                <button type="button" class="btn btn-secondary"
-                                                    style="margin: 2% 2% 2% 0;">Saturday: 6pm</button>
-                                                <button type="button" class="btn btn-secondary"
-                                                    style="margin: 2% 2% 2% 0;">Sunday: 6pm</button>
+                                            <div class="row">
+                                                <div class="col-sm-3"><label
+                                                        style="margin: 4% 0 0 0; font-size: 20px; color:#d2cd9d;padding-left: 4%;">Make
+                                                        a booking:</label>
+                                                </div>
+                                                <div class="col-sm-9" style="color:black;">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        style="margin: 2% 2% 2% 0;">Wednesday: 9pm (T21)</button>
+                                                    <button type="button" class="btn btn-secondary"
+                                                        style="margin: 2% 2% 2% 0;">Thursday: 9pm (T21)</button>
+                                                    <button type="button" class="btn btn-secondary"
+                                                        style="margin: 2% 2% 2% 0;">Friday: 9pm (T21)</button>
+                                                    <button type="button" class="btn btn-secondary"
+                                                        style="margin: 2% 2% 2% 0;">Saturday: 6pm (T18)</button>
+                                                    <button type="button" class="btn btn-secondary"
+                                                        style="margin: 2% 2% 2% 0;">Sunday: 6pm (T18)</button>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
                             </div>
                         </div>
 
                     </div>
 
                 </div>
+                <div style=" margin-top:7.5px;">
+                    <div class=" d-flex row justify-content-center my-3">
+                        <div class="col-xs-5 col-md-5 col-sm-12 mx-2 "
+                            style="background-color: #8C8C8C;padding-top: 8px;padding-bottom: 8px;">
+                            <div class="row px-1">
+                                <div class="col-sm-6">
+                                    <img src="image/topendwedding.jpeg"
+                                        style="max-width: 100%;height: auto; border: black 2px solid; object-fit: cover;">
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="movie-name">
+                                        <h4 style="font-weight:700;">Top end Weddings<span style="padding-left: 3%;">NR</span></h4>
+                                    </div>
+                                    <div class="movie-schedule">Showing schedule</div>
+
+                                    <div class="movie-info">
+                                        <p>
+                                            <br />Monday: 6pm (T18)
+                                            <br />Tuesday: 6pm (T18)
+                                            <br />Saturday: 3pm (T15)
+                                            <br />Sunday: 3pm (T15)
+                                        </p>
+                                    </div>
+                                    <button type="button" class="btn btn-light"
+                                        style="font-family: 'Oswald', sans-serif;" data-toggle="modal"
+                                        data-target=".bd-example-modal-lg">More Details</button>
+
+                                    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog"
+                                        aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-xl">
+                                            <div class="modal-content"
+                                                style="background-image: url(background-grey-synopsis.jpg); background-size: cover; color:#c0c0c1">
+                                                <div class="row">
+                                                    <div class="col-sm-9">
+                                                        <h5 class="modal-title" id="exampleModalLabel"
+                                                            style="font-size: 40px; color:#d2cd9d;padding-left: 20px;">
+                                                            Avengers: Endgame <span style="margin-left:100px"
+                                                                ;>PG-13</span></h5>
+                                                    </div>
+                                                </div>
+                                                <div class="row"
+                                                    style="border-bottom: 1px solid black; border-top: 1px solid black;">
+                                                    <div class="col-sm-4"
+                                                        style="padding-top: 4%; padding-bottom: 4%;padding-left: 2%;">
+                                                        <h7 style="font-size: 36px; color: #d2cd9d;padding-left: 4%;">
+                                                            Plot Description</h7>
+                                                        <p
+                                                            style="text-align: justify; color: #f5f5f5;padding-left: 20px;">
+                                                            Avengers: Endgame picks up after the events
+                                                            of
+                                                            Avengers:
+                                                            Infinity War, which saw the Avengers
+                                                            divided and defeated. Thanos won the day and used the
+                                                            Infinity Stones to
+                                                            snap away
+                                                            half
+                                                            of
+                                                            all life in the universe. Only the original Avengers - Iron
+                                                            Man, Captain
+                                                            America,
+                                                            Thor,
+                                                            Hulk, Black Widow, and Hawkeye remain, along with some key
+                                                            allies like War
+                                                            Machine,
+                                                            Ant-Man,
+                                                            Rocket Raccoon, Nebula, and Captain Marvel. Each of the
+                                                            survivors deals with
+                                                            the
+                                                            fallout
+                                                            from Thanos' decimation in different ways, but when an
+                                                            opportunity presents
+                                                            itself
+                                                            to
+                                                            potentially save those who vanished, they all come together
+                                                            and set out to
+                                                            defeat
+                                                            Thanos,
+                                                            once and for all.</p>
+                                                    </div>
+                                                    <div class="col-sm-8">
+                                                        <iframe
+                                                            style="padding-top: 8%; padding-bottom: 2%;padding-right: 2%;"
+                                                            width="100%" height="400"
+                                                            src="https://www.youtube.com/embed/TcMBFSGVi1c"
+                                                            frameborder="0"
+                                                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                                            allowfullscreen></iframe>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-sm-3"><label
+                                                            style="margin: 4% 0 0 0; font-size: 20px; color:#d2cd9d;padding-left: 4%;">Make
+                                                            a booking:</label>
+                                                    </div>
+                                                    <div class="col-sm-9" style="color:black;">
+                                                        <button type="button" class="btn btn-secondary"
+                                                            style="margin: 2% 2% 2% 0;">Wednesday: 9pm (T21)</button>
+                                                        <button type="button" class="btn btn-secondary"
+                                                            style="margin: 2% 2% 2% 0;">Thursday: 9pm (T21)</button>
+                                                        <button type="button" class="btn btn-secondary"
+                                                            style="margin: 2% 2% 2% 0;">Friday: 9pm (T21)</button>
+                                                        <button type="button" class="btn btn-secondary"
+                                                            style="margin: 2% 2% 2% 0;">Saturday: 6pm (T18)</button>
+                                                        <button type="button" class="btn btn-secondary"
+                                                            style="margin: 2% 2% 2% 0;">Sunday: 6pm (T18)</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-xs-5 col-md-5 col-sm-12 mx-2 "
+                            style="background-color: #8C8C8C;padding-top: 8px;padding-bottom: 8px; ">
+                            <div class="row px-1">
+                                <div class="col-sm-6">
+                                    <img src="image/dumbo.jpeg"
+                                        style="max-width: 100%;height: auto;border: black 2px solid; object-fit: cover;">
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="movie-name">
+                                        <h4 style="font-weight:700;">Dumbo<span style="padding-left: 3%;">PG</span></h4>
+                                    </div>
+                                    <div class="movie-schedule">Showing schedule</div>
+                                    <div class="movie-info">
+                                        <p>
+                                            <br />Monday : 12pm (T12)
+                                            <br />Tuesday : 12pm (T12)
+                                            <br />Wednesday : 6pm (T18)
+                                            <br />Thursday : 6pm (T18)
+                                            <br />Friday : 6pm (T18)
+                                            <br />Saturday : 12pm (T12)
+                                            <br />Sunday : 12pm (T12)
+
+                                        </p>
+                                    </div>
+                                    <button type="button" class="btn btn-light"
+                                        style="font-family: 'Oswald', sans-serif;" data-toggle="modal"
+                                        data-target=".bd-example-modal-lg">More Details</button>
+
+                                    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog"
+                                        aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-xl">
+                                            <div class="modal-content"
+                                                style="background-image: url(background-grey-synopsis.jpg); background-size: cover; color:#c0c0c1">
+                                                <div class="row">
+                                                    <div class="col-sm-9">
+                                                        <h5 class="modal-title" id="exampleModalLabel"
+                                                            style="font-size: 40px; color:#d2cd9d;padding-left: 20px;">
+                                                            Avengers: Endgame <span style="margin-left:100px"
+                                                                ;>PG-13</span></h5>
+                                                    </div>
+                                                </div>
+                                                <div class="row"
+                                                    style="border-bottom: 1px solid black; border-top: 1px solid black;">
+                                                    <div class="col-sm-4"
+                                                        style="padding-top: 4%; padding-bottom: 4%;padding-left: 2%;">
+                                                        <h7 style="font-size: 36px; color: #d2cd9d;padding-left: 4%;">
+                                                            Plot Description</h7>
+                                                        <p
+                                                            style="text-align: justify; color: #f5f5f5;padding-left: 20px;">
+                                                            Avengers: Endgame picks up after the events
+                                                            of
+                                                            Avengers:
+                                                            Infinity War, which saw the Avengers
+                                                            divided and defeated. Thanos won the day and used the
+                                                            Infinity Stones to
+                                                            snap away
+                                                            half
+                                                            of
+                                                            all life in the universe. Only the original Avengers - Iron
+                                                            Man, Captain
+                                                            America,
+                                                            Thor,
+                                                            Hulk, Black Widow, and Hawkeye remain, along with some key
+                                                            allies like War
+                                                            Machine,
+                                                            Ant-Man,
+                                                            Rocket Raccoon, Nebula, and Captain Marvel. Each of the
+                                                            survivors deals with
+                                                            the
+                                                            fallout
+                                                            from Thanos' decimation in different ways, but when an
+                                                            opportunity presents
+                                                            itself
+                                                            to
+                                                            potentially save those who vanished, they all come together
+                                                            and set out to
+                                                            defeat
+                                                            Thanos,
+                                                            once and for all.</p>
+                                                    </div>
+                                                    <div class="col-sm-8">
+                                                        <iframe
+                                                            style="padding-top: 8%; padding-bottom: 2%;padding-right: 2%;"
+                                                            width="100%" height="400"
+                                                            src="https://www.youtube.com/embed/TcMBFSGVi1c"
+                                                            frameborder="0"
+                                                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                                            allowfullscreen></iframe>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-sm-3"><label
+                                                            style="margin: 4% 0 0 0; font-size: 20px; color:#d2cd9d;padding-left: 4%;">Make
+                                                            a booking:</label>
+                                                    </div>
+                                                    <div class="col-sm-9" style="color:black;">
+                                                        <button type="button" class="btn btn-secondary"
+                                                            style="margin: 2% 2% 2% 0;">Wednesday: 9pm (T21)</button>
+                                                        <button type="button" class="btn btn-secondary"
+                                                            style="margin: 2% 2% 2% 0;">Thursday: 9pm (T21)</button>
+                                                        <button type="button" class="btn btn-secondary"
+                                                            style="margin: 2% 2% 2% 0;">Friday: 9pm (T21)</button>
+                                                        <button type="button" class="btn btn-secondary"
+                                                            style="margin: 2% 2% 2% 0;">Saturday: 6pm (T18)</button>
+                                                        <button type="button" class="btn btn-secondary"
+                                                            style="margin: 2% 2% 2% 0;">Sunday: 6pm (T18)</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
 
 
+                </div>
+        </section>
+        <section id="booking">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12" style="height:100px">
+                        <h3
+                            style="text-align: center; padding:25px;font-family: 'Abril Fatface', cursive;font-size: 40px;background-color: #ffffff;">
+                            Booking Area</h3>
+                    </div>
+                    <img src="https://cdn.pixabay.com/photo/2017/06/20/08/12/maintenance-2422173_1280.png"
+                        alt="This area is under construction" width="100%">
+                </div>
             </div>
-    </section>
 
-    <script>
-        function openModal() {
-            document.getElementById("myModal").style.display = "block";
-        }
-
-        function closeModal() {
-            document.getElementById("myModal").style.display = "none";
-        }
-
-        var slideIndex = 1;
-        showSlides(slideIndex);
-
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
-
-        function showSlides(n) {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("demo");
-            var captionText = document.getElementById("caption");
-            if (n > slides.length) { slideIndex = 1 }
-            if (n < 1) { slideIndex = slides.length }
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
+        </section>
+        <script>
+            function openModal() {
+                document.getElementById("myModal").style.display = "block";
             }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
+
+            function closeModal() {
+                document.getElementById("myModal").style.display = "none";
             }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-            captionText.innerHTML = dots[slideIndex - 1].alt;
-        }
-    </script>
+
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("demo");
+                var captionText = document.getElementById("caption");
+                if (n > slides.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = slides.length }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+                captionText.innerHTML = dots[slideIndex - 1].alt;
+            }
+        </script>
     </main>
 
     <footer>
-      <div>&copy;<script>
-        document.write(new Date().getFullYear());
-      </script> Put your name(s), student number(s) and group name here. Last modified <?= date ("Y F d  H:i", filemtime($_SERVER['SCRIPT_FILENAME'])); ?>.</div>
-      <div>Disclaimer: This website is not a real website and is being developed as part of a School of Science Web Programming course at RMIT University in Melbourne, Australia.</div>
-      <div><button id='toggleWireframeCSS' onclick='toggleWireframe()'>Toggle Wireframe CSS</button></div>
+        <div style="display: block; background-color: #c8c8c8; text-align: center;">
+            <h3>
+                Contact Us:
+            </h3>
+            <div>
+                <div class="fa fa-envelope-o"> Email: cinemax@example.com</div>
+            </div>
+            <div>
+                <div class="fa fa-address-book-o"> Address: 15 Moran Street, CA, US</div>
+            </div>
+            <div>
+                <div class="fas fa-phone" style="font-weight: normal;"> Phone number: (054) 0168-996-259</div>
+            </div>
+
+        </div>
+        <div>&copy;
+            <script>
+                document.write(new Date().getFullYear());
+            </script>Created by: Group 10:<br /> Tran Dang Bao Nhi - s3751881 - <a
+                href='https://github.com/s3751881/wp'>Github</a> <br /> Le Quynh Giang - s3802828 - <a
+                href='https://github.com/s3802828/wp'>Github</a><br /> Last modified
+            <?= date ("Y F d  H:i", filemtime($_SERVER['SCRIPT_FILENAME'])); ?>.</div>
+        <div>Disclaimer: This website is not a real website and is being developed as part of a School of Science Web
+            Programming course at RMIT University in Melbourne, Australia.</div>
+        <div><button id='toggleWireframeCSS' onclick='toggleWireframe()'>Toggle Wireframe CSS</button></div>
     </footer>
 
-  </body>
+</body>
+
 </html>
