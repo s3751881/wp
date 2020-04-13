@@ -46,35 +46,54 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon+SC&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
 
     <!-- Keep wireframe.css for debugging, add your css to style.css -->
     <link id='wireframecss' type="text/css" rel="stylesheet" href="../wireframe.css" disabled>
     <link id='stylecss' type="text/css" rel="stylesheet" href="../style.css">
 
     <script src='../wireframe.js'></script>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("navigationbar");
+            if (x.className === "sticky-section") {
+            x.className += " responsive";
+            } else {
+            x.className = "sticky-section";
+            }
+        }
+    </script>
 </head>
 
 <body>
 
     <header>
-        <h1><span>CINEMAX</span></h1>
+        
+        
+        <img src='image/cinemax_logo.png' style="max-width: 50%;height: auto;">
+    
         <h3>Bring the best experience</h3>
     </header>
     <!-- Navigation bar-->
-    <div class="sticky-section">
+    <div class="sticky-section" id='navigationbar'>
         <div id="logo">CINEMAX</div>
         <nav>
-            <a href='#aboutus'>About Us</a>
-            <a href="#price">Price</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
             <a href="#nowshowing">Now showing</a>
-            <a href="#logo">Home</a>
+            <a href="#price">Price</a>
+            <a href="#aboutus">About Us</a>
+
         </nav>
     </div>
 
     <main>
+       
         <section id="aboutus">
             <div class="container-fluid"
                 style="margin-top:20px;margin-bottom: 5px;border: black;color:white;background-color: black;height: 50px;text-align: center;">
+                
                 <a style="font-family: 'Abril Fatface', cursive;font-weight: 700;font-size: 30px;"> CINEMAX - ABOUT
                     US</a>
             </div>
