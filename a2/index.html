@@ -68,20 +68,20 @@
 <body>
 
     <header>
-        
-        
+
+
         <img src='image/cinemax_logo.png' style="max-width: 50%;height: auto;">
-    
+
         <h3>Bring the best experience</h3>
     </header>
     <!-- Navigation bar-->
     <div class="sticky-section" id='navigationbar'>
         <div id="logo">CINEMAX</div>
-        <nav>
+        <nav id="nav-items">
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i class="fa fa-bars"></i>
             </a>
-            <a href="#nowshowing">Now showing</a>
+            <a href="#nowshowing" id="firstNavbarElement">Now showing</a>
             <a href="#price">Price</a>
             <a href="#aboutus">About Us</a>
 
@@ -89,11 +89,11 @@
     </div>
 
     <main>
-       
+
         <section id="aboutus">
             <div class="container-fluid"
                 style="margin-top:20px;margin-bottom: 5px;border: black;color:white;background-color: black;height: 50px;text-align: center;">
-                
+
                 <a style="font-family: 'Abril Fatface', cursive;font-weight: 700;font-size: 30px;"> CINEMAX - ABOUT
                     US</a>
             </div>
@@ -319,7 +319,7 @@
                 </div>
             </div>
             </div>
-           
+
             <div class="container-fluid" id="innoseat" style="margin-bottom:20px">
                 <div class="row">
                     <div class="col-sm-6">
@@ -424,12 +424,12 @@
                 </div>
             </div>
             </div>
-            
+
             <div class="jumbotron jumbotron-fluid" id="jumbotronsoundandpro" style="font-family: 'IM Fell French Canon SC', serif;">
                 <div class="container">
                     <h1 class="display-4">Dobly ATMOS and Dobly 3D projection
                     </h1>
-                    <p class="lead" > Dobly Atmos gives you the most close-to-real sounds and makes you feel like you are just taking part in the movie scenes. 
+                    <p class="lead" > Dobly Atmos gives you the most close-to-real sounds and makes you feel like you are just taking part in the movie scenes.
                         Dobly 3D will give you more fascinating experience when it comes to watch a movie since it brings the screen coming closer to your eyes. There will be no longer 2D movies but things will be animated and moving.
                     </p>
                 </div>
@@ -445,7 +445,7 @@
                         <a href="#3Dprojection"> DOBLY 3D </a>
                     </div>
                 </div>
-    
+
             </div>
             <div class="sound" id="sound">
                 <div class="row">
@@ -454,7 +454,7 @@
                         <p style="text-align: center;">Dolby Atmos transports you into the story with moving audio that
                             flows all around you with breathtaking realism.</p>
                     </div>
-    
+
                 </div>
             </div>
             <div class="container-fluid">
@@ -467,12 +467,12 @@
                 <div class="row" style="font-family: 'Roboto Mono', ;">
                     <div class="col-md-12" style="margin: 20px; margin-top: 35px;">
                         <h3> Dolby Atmos Redefines Your Entertainment Experience</h3>
-    
+
                     </div>
                     <div class="col-md-6" style="margin-top: 35px;">
                         <ul>
                             <li style="font-size: 23px; padding-right:10%;">Moves sound all around you</li>
-    
+
                         </ul>
                         <p style="padding-left: 5%;">Rather than being constrained to channels, sounds can be precisely
                             placed and moved in
@@ -481,7 +481,7 @@
                     <div class="col-md-6" style="margin-top: 35px;">
                         <ul>
                             <li style="font-size: 23px; padding-right:15%">Produces breathtaking sound quality</li>
-    
+
                         </ul>
                         <p style="padding-left: 5%;">Dolby Atmos renders everything from dialogue to quiet scenes to
                             whirlwind action with astonishing
@@ -490,7 +490,7 @@
                     <div class="col-md-6" style="margin-top: 35px;">
                         <ul>
                             <li style="font-size: 23px; padding-right:15%">Adds an overhead dimension</li>
-    
+
                         </ul>
                         <p style="padding-left: 5%;">A new sensation of height immerses you in the action, creating a full
                             audio atmosphere and
@@ -500,7 +500,7 @@
                         <ul>
                             <li style="font-size: 23px; padding-right:10%">Creates a powerfully moving entertainment
                                 experience</li>
-    
+
                         </ul>
                         <p style="padding-left: 5%;">It all comes together in sound that excites your senses and inspires
                             your emotions to deliver the
@@ -515,10 +515,10 @@
                         <p style="text-align: center;">Dolby 3D comprises two systems: glasses-free 3D for TVs, PCs, and
                             portable devices; and a unique digital cinema technology. Both systems deliver sharp, vivid
                             images with exceptional color fidelity and realistic 3D effects.
-    
+
                         </p>
                     </div>
-    
+
                 </div>
             </div>
             <div class="container-fluid" style="background-color: #c9d6df;">
@@ -532,12 +532,12 @@
                 <div class="row">
                     <div class="col-md-12" style=" margin-top: 35px;margin-bottom: 35px;padding-left: 10%;">
                         <h3> Dolby Atmos Redefines Your Entertainment Experience</h3>
-    
+
                     </div>
                     <div class="col-md-6" style="margin-top: 20px;">
                         <ul>
                             <li style="font-size: 23px; padding-right:15%">Spectacular 3D Picture</li>
-    
+
                         </ul>
                         <p style="padding-left: 5%;">The most important aspect of any 3D technology is the picture, and
                             Dolby® 3D delivers. You'll
@@ -546,7 +546,7 @@
                     <div class="col-md-6" style="margin-top: 20px;">
                         <ul>
                             <li style="font-size: 23px; padding-right:15%;padding-left: 5%;">Full Resolution</li>
-    
+
                         </ul>
                         <p style="padding-left: 5%;">Other 3D systems deliver only half-resolution to each eye. Dolby 3D
                             upgrades these signals to
@@ -556,7 +556,7 @@
                     <div class="col-md-6" style="margin-top: 30px;">
                         <ul>
                             <li style="font-size: 23px; padding-right:10%">3D on Your TV, Laptop, or Mobile Device</li>
-    
+
                         </ul>
                         <p style="padding-left: 5%;">Dolby 3D works on any 3D device: TV, tablet, laptop, or smartphone. It
                             automatically optimizes 3D
@@ -565,7 +565,7 @@
                     <div class="col-md-6" style="margin-top: 30px;">
                         <ul>
                             <li style="font-size: 23px; padding-right:10%">At Last—Social 3D</li>
-    
+
                         </ul>
                         <p style="padding-left: 5%;">Sit anywhere in the room for great 3D on your TV. You can have friends
                             over and not have to crowd
@@ -573,7 +573,7 @@
                     </div>
                 </div>
             </div>
-    
+
             </div>
         </section>
         <section id="price">
