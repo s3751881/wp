@@ -24,16 +24,25 @@
     margin: 0;
     padding: 0;
   }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 862px) {
+     #logo {
+          margin-right: 0px;
+          margin-left: 5% !important;
+      }
+  }
+  @media screen and (max-width: 612px) {
     .sticky-section a:not(:first-child) {display: none;}
     .sticky-section a.icon {
       float: right;
       display: block;
     }
+    #firstNavbarElement{
+        margin-top: 5vh
+    }
   }
   
-  @media screen and (max-width: 600px) {
-    .sticky-section.responsive {position: relative;}
+  @media screen and (max-width: 612px) {
+    .sticky-section.responsive {position: sticky;}
     .sticky-section.responsive .icon {
       position: absolute;
       right: 0;
@@ -46,11 +55,11 @@
     }
   }
   #logo{
-    font-size:20px;  
+    font-size:20px;
     font-weight:bold;
     float:left;
     padding: 15px 15px; 
-    margin-left:16%;  
+    margin-left:16%;
   }
   nav{
     margin-right:17%;
@@ -216,6 +225,9 @@ width:340px;
 @media (max-width: 768px) {
     #banneratmos {
     min-height: 545px;
+    }
+    #nav-items{
+        width: 100%
     }
 }
 }
