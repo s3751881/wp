@@ -272,6 +272,12 @@ color: white;
 
 
 }
+#seatpremiuminfo{
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Mukta', sans-serif;
+
+
+}
 #jumbotronsoundandpro{
 
   font-family: 'Roboto', sans-serif;
@@ -353,4 +359,4 @@ color: white;
 }
 .movie-info{
   font-family: 'Oswald', sans-serif;
-}/* Insert your styles here */
+}
