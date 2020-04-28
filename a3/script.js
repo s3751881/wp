@@ -7,10 +7,11 @@ function myFunction() {
     x.className = "sticky-section";
     }
 }
-let nav_height = document.getElementsByTagName('nav')[0].clientHeight
-console.log(document.getElementsByTagName('nav'))
-let sect1_top = document.getElementById('aboutus').offsetTop
-let sect2_top = document.getElementById('price').offsetTop
+
+let nav_height = document.getElementsByTagName('nav')[0].clientHeight + 20;
+console.log(document.getElementById('aboutus').offsetTop);
+let sect1_top = document.getElementById('aboutus').offsetTop  ;
+let sect2_top = document.getElementById('price').offsetTop + 20 ;
 let sect3_top = document.getElementById('nowshowing').offsetTop
 let nav_links = document.querySelectorAll('.nav-item')
 
