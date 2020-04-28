@@ -17,15 +17,7 @@ function comparesectionFunction(){
     else active_links[2].classList.remove('active')
 }
 document.addEventListener('scroll',comparesectionFunction)
-// document.addEventListener('scroll', () => {
-//     let scroll_win = window.scrollY + navbar_height
-//     if (scroll_win > aboutus_sec && price_sec > scroll_win)active_links[0].classList.add('active')
-//     else active_links[0].classList.remove('active')
-//     if (scroll_win > price_sec && nowshowing_sec>scroll_win)active_links[1].classList.add('active')
-//     else active_links[1].classList.remove('active')
-//     if (scroll_win> nowshowing_sec)active_links[2].classList.add('active')
-//     else active_links[2].classList.remove('active')
-// })
+
 // Synopsis
 const synopsis = document.getElementById('synopsis_sec')
 synopsis.style.display = 'none'
@@ -61,6 +53,7 @@ let movies_syn = {
     },
 
 }
+/* Global variable  - block scope */
 let infor = document.getElementById('movie_info')
 let firstchild_movie = infor.children[0]
 let movie_syn_title = firstchild_movie.children[0]
@@ -79,15 +72,7 @@ function showContent(event){
     trailer.src = movie.trailer
     movie_syn_input.value = event.target.id
     synopsis_sec.style.display = ''
-
 }
 buttons.forEach(button => {button.addEventListener('click',(event)=>showContent(event))})
 
-// let info = document.getElementById('movie_info')
-// let movie_syn_title = info.children[0].children[0]
-// let movie_syn_rating = info.children[0].children[1]
-// let movie_syn_plot = info.children[3]
-// let movie_input = info.children[4]
-// let inputs = document.querySelectorAll('input[name=\'booking\']')
-// let labels = document.querySelectorAll('.booking-date label')
-// let discount_flag = false;
+
