@@ -24,6 +24,7 @@
     margin: 0;
     padding: 0;
   }
+
   @media screen and (max-width: 862px) {
      #logo {
           margin-right: 0px;

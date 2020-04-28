@@ -25,7 +25,7 @@ let movies_syn = {
     'synopsisACT': {
         name: 'Avengers: Endgame',
         rating: 'M',
-        time: ['21:00', '21:00', '21:00', '18:00', '18:00'],
+        time: [ 'Wednesday: 9pm', 'Thursday: 9pm', 'Friday 9pm', 'Saturday: 6pm ', 'Sunday: 6pm'],
         plot: String.raw`After the devastating events of Avengers: Infinity War (2018), the universe is in ruins due to the efforts of the Mad Titan, Thanos. With the help of remaining allies, the Avengers must assemble once more in order to undo Thanos's actions and undo the chaos to the universe, no matter what consequences may be in store, and no matter who they face...`,
         trailer: 'https://www.youtube.com/embed/TcMBFSGVi1c'
     },
@@ -56,23 +56,55 @@ let movies_syn = {
 /* Global variable  - block scope */
 let infor = document.getElementById('movie_info')
 let firstchild_movie = infor.children[0]
-let movie_syn_title = firstchild_movie.children[0]
-let movie_syn_rating = firstchild_movie.children[1]
-let movie_syn_plot = infor.children[3]
-let movie_syn_input = infor.children[4]
+let movie_syn_title = firstchild_movie.children[0];
+let movie_syn_rating = firstchild_movie.children[1];
+let movie_syn_plot = infor.children[3];
+let movie_syn_input = infor.children[4];
 
 
 let trailer = document.getElementsByTagName('iframe')[0]
 let buttons = document.querySelectorAll(".btn")
 function showContent(event){
-    var movie = movies_syn[event.target.id]
+    var movie = movies_syn[event.target.id];
     movie_syn_title.innerHTML = movie.name
-    movie_syn_rating.innerHTML = '[' + movie.rating + ']'
-    movie_syn_plot.innerText = movie.plot
-    trailer.src = movie.trailer
-    movie_syn_input.value = event.target.id
-    synopsis_sec.style.display = ''
+    movie_syn_rating.innerHTML = '[' + movie.rating + ']';
+    movie_syn_plot.innerText = movie.plot;
+    trailer.src = movie.trailer;
+    movie_syn_input.value = event.target.id;
+    synopsis_sec.style.display = '';
+    createDetailContainer(movie.time);
+    console.log('clicked')
 }
+
+
+const createTimeButton = (time, index) => {
+    let button = document.createElement('Button');
+    button.setAttribute('class', 'btn btn-secondary movie_hour');
+    button.setAttribute('style', 'margin: 2% 2% 2% 0;');
+    button.setAttribute('id', 'movie_hour_' + index);
+    button.onclick = (e) => e.preventDefault();
+//    create span
+    let information = document.createElement('SPAN');
+    information.innerText = time;
+    information.setAttribute('class',  'day');
+    button.appendChild(information)
+    return button
+}
+
+const createDetailContainer = (time)=>{
+    let index = 0;
+    let detailContainer = document.getElementById('timetable');
+    detailContainer.innerHTML = '';
+    detailContainer.setAttribute('class', 'col-sm-9');
+    detailContainer.setAttribute('style', 'color:black; display:block');
+    detailContainer.setAttribute('id', 'timetable');
+    for (let item of time) {
+        const detailButton = createTimeButton(item, index);
+        index++;
+        detailContainer.append(detailButton);
+    }
+}
+
 buttons.forEach(button => {button.addEventListener('click',(event)=>showContent(event))})
 
 
