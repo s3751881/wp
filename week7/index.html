@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="tool.js"></script>
+    <title>Document</title>
+    <style>
+        input[pattern]invalid{
+            border:  2px red solid;
+            background-color: #fee;
+        }
+    </style>
+    
+</head>
+<body>
+    <p>
+        <input type="button" id="price" value="Calculte" onclick="setInterval(calculatePrice,5000);">
+    </p>
+    <p>
+        <input type="button" d="price2" value="Calculate 2">
+    </p>
+    <p id="p3"> 
+        <input type="button" d="price3" value="Calculate 3">
+    </p>
+    <input type="text" pattern="Steve [a-zA-Z ]+">
+
+</body>
+</html>
