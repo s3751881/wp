@@ -24,14 +24,14 @@ synopsis.style.display = 'none'
 let movies_syn = {
     'synopsisACT': {
         name: 'Avengers: Endgame',
-        rating: 'M',
+        rating: 'PG-13',
         movieday: [ 'Wednesday: 21:00', 'Thursday: 21:00', 'Friday: 21:00', 'Saturday: 18:00 ', 'Sunday: 18:00'],
         plot: String.raw`After the devastating events of Avengers: Infinity War (2018), the universe is in ruins due to the efforts of the Mad Titan, Thanos. With the help of remaining allies, the Avengers must assemble once more in order to undo Thanos's actions and undo the chaos to the universe, no matter what consequences may be in store, and no matter who they face...`,
         trailer: 'https://www.youtube.com/embed/TcMBFSGVi1c'
     },
     'synopsisAHF': {
         name: 'The Happy Prince',
-        rating: 'MA15+',
+        rating: 'R',
         movieday:['Wednesday: 12:00','Thursday: 12:00','Friday: 12:00 ','Saturday: 21:00','Sunday: 21:00'],      
         plot: String.raw`In a cheap Parisian hotel room Oscar Wilde lies on his death bed. The past floods back, taking him to other times and places. Was he once the most famous man in London? The artist crucified by a society that once worshipped him? Under the microscope of death he reviews the failed attempt to reconcile with his long suffering wife Constance, the ensuing reprisal of his fatal love affair with Lord Alfred Douglas and the warmth and devotion of Robbie Ross, who tried and failed to save him from himself. Travelling through Wilde's final act and journeys through England, France and Italy, the transience of lust is laid bare and the true riches of love are revealed. It is a portrait of the dark side of a genius who lived and died for love.`,
         trailer: 'https://www.youtube.com/embed/4HmN9r1Fcr8'
@@ -39,7 +39,7 @@ let movies_syn = {
 
     'synopsisRMC': {
         name: 'Top End Wedding',
-        rating: 'M',
+        rating: 'NR',
         movieday:['Monday: 18:00','Tuesday: 18:00','Saturday: 15:00','Sunday: 15:00'],
         plot: String.raw`Lauren and Ned are engaged, they are in love, and they have just ten days to find Lauren's mother who has gone AWOL somewhere in the remote far north of Australia, reunite her parents and pull off their dream wedding.`,
         trailer: 'https://www.youtube.com/embed/uoDBvGF9pPU'
