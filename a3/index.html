@@ -711,9 +711,6 @@
                             <div class="movie col-md-12" >
                                 <button type="button" class="btn btn-light"
                                 style="font-family: 'Oswald', sans-serif;" id='synopsisRMC'>More Details</button>
-                                <input type="hidden" name="movie[day]">
-                                <input type="hidden" name="movie[hour]">
-                        
                             </div>
                             
 
@@ -782,8 +779,9 @@
             </div>
         </div>
         <!-- Date -->
-        <div class="col-sm-9" style="color:black; display: block" id="timetable">
-          </div>
+        <div class="col-sm-9" style="color:black; display: block" id="timetable"></div>
+        <input type="hidden" name="movie[day]" id="movie_day_input">
+        <input type="hidden" name="movie[hour]" id="movie_hour_input">
         <!-- Seat -->
           <div id="results" style="display: none;"></div>
           <div id="value_results_STA" style="display: none;"></div>
