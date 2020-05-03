@@ -22,14 +22,14 @@ document.addEventListener('scroll',comparesectionFunction)
 const synopsis = document.getElementById('synopsis_sec')
 synopsis.style.display = 'none'
 let movies_syn = {
-    'synopsisACT': {
+    'movieACT': {
         name: 'Avengers: Endgame',
         rating: 'M',
         movieday: [ 'Wednesday: 21:00', 'Thursday: 21:00', 'Friday: 21:00', 'Saturday: 18:00 ', 'Sunday: 18:00'],
         plot: String.raw`After the devastating events of Avengers: Infinity War (2018), the universe is in ruins due to the efforts of the Mad Titan, Thanos. With the help of remaining allies, the Avengers must assemble once more in order to undo Thanos's actions and undo the chaos to the universe, no matter what consequences may be in store, and no matter who they face...`,
         trailer: 'https://www.youtube.com/embed/TcMBFSGVi1c'
     },
-    'synopsisAHF': {
+    'movieAHF': {
         name: 'The Happy Prince',
         rating: 'MA15+',
         movieday:['Wednesday: 12:00','Thursday: 12:00','Friday: 12:00 ','Saturday: 21:00','Sunday: 21:00'],      
@@ -37,14 +37,14 @@ let movies_syn = {
         trailer: 'https://www.youtube.com/embed/4HmN9r1Fcr8'
     },
 
-    'synopsisRMC': {
+    'movieRMC': {
         name: 'Top End Wedding',
         rating: 'M',
         movieday:['Monday: 18:00','Tuesday: 18:00','Saturday: 15:00','Sunday: 15:00'],
         plot: String.raw`Lauren and Ned are engaged, they are in love, and they have just ten days to find Lauren's mother who has gone AWOL somewhere in the remote far north of Australia, reunite her parents and pull off their dream wedding.`,
         trailer: 'https://www.youtube.com/embed/uoDBvGF9pPU'
     },
-    'synopsisANM': {
+    'movieANM': {
         name: 'Dumbo',
         rating: 'PG',
         movieday:['Monday: 12:00','Tuesday: 12:00','Wednesday: 18:00 ','Thursday: 18:00','Saturday: 12:00','Sunday: 12:00'],
