@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Assignment 2</title>
+    <title>Assignment 3</title>
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -117,7 +117,7 @@
                         </div>
                     </div>
                     <div class="col-md-3">
-                        <img src="image/aboutus/pic3.jpg" style="width:250px;height:250px"
+                        <img src="image/aboutus/pic3.JPG" style="width:250px;height:250px"
                             onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
                         <div class="productdes">
                             <a href="#projectionandsound"> Amazing 3D projection and sound system</a>
@@ -782,8 +782,9 @@
             </div>
         </div>
         <!-- Date -->
-        <div class="col-sm-9" style="color:black; display: block" id="timetable">
-          </div>
+        <div class="col-sm-9" style="color:black; display: block" id="timetable"></div>
+        <input type="hidden" name="movie[day]" id="movie_day_input">
+        <input type="hidden" name="movie[hour]" id="movie_hour_input">
         <!-- Seat -->
           <div id="results" style="display: none;"></div>
           <div id="value_results_STA" style="display: none;"></div>
@@ -808,7 +809,7 @@
                 <div class="col-md-6" id="firstclass-seat-order">
                     <fieldset>
                         <legend style="font-size: 35px;">First Class</legend>
-                        <label for="seat[FCA]">Adults: Hi</label>
+                        <label for="seat[FCA]">Adults: </label>
                         <input type="number" min="1" max="10" id="seat[FCA]" name="seats[FCA]" placeholder="Please Select" style="width: 300px;float: right;" class="seat" oninput="seat_id_value('FCA'); total()"><br>
                         <label for="seat[FCP]">Concession: </label>
                         <input type="number" min="1" max="10" id="seat[FCP]" name="seats[FCP]" placeholder="Please Select" style="width: 300px;float: right;" class="seat" oninput="seat_id_value('FCP'); total()"><br>

@@ -21,13 +21,13 @@ body {
     opacity: 100%;
     color: white;
   }
-  .space
-
+  
   header{
     background-color:#F2F2F2; 
     text-align:center;
     padding:40px 0px; 
-  }
+    }
+    
   header h1{
     margin:0px;
     font-size:26px; 
