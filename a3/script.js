@@ -227,3 +227,23 @@ function checkDate() {
     }
     document.getElementById('cust_expiry').min = min_expiry
     }
+
+function validateForm() {
+    var movie_day_value = document.forms["booking-form"]["movie[day]"].value;
+    var movie_hour_value = document.forms["booking-form"]["movie[hour]"].value;
+    var seats_STA_value = document.forms["booking-form"]["seats[STA]"].value;
+    var seats_STP_value = document.forms["booking-form"]["seats[STP]"].value;
+    var seats_STC_value = document.forms["booking-form"]["seats[STC]"].value;
+    var seats_FCA_value = document.forms["booking-form"]["seats[FCA]"].value;
+    var seats_FCP_value = document.forms["booking-form"]["seats[FCP]"].value;
+    var seats_FCC_value = document.forms["booking-form"]["seats[FCC]"].value;
+    if (movie_day_value == "" || movie_hour_value == "") {
+        alert("You must choose the time");
+        return false;
+    }
+    if (seats_STA_value == "" && seats_STP_value  == "" && seats_STC_value == "" && seats_FCA_value  == "" && seats_FCP_value == "" && seats_FCC_value  == "") {
+        alert("You must choose at least one type of seat");
+        return false;
+    }
+        
+    }
