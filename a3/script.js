@@ -7,6 +7,7 @@ const price_sec = document.getElementById('price').offsetTop - 100
 const nowshowing_sec = document.getElementById('nowshowing').offsetTop
 const active_links = document.querySelectorAll('.nav-item')
 console.log(document.querySelectorAll('.nav-item'))
+// compare the position of section that customer are currently scrolling to 
 function comparesectionFunction(){
     var scroll_win = window.scrollY + navbar_height
     if (scroll_win > aboutus_sec && price_sec > scroll_win)active_links[0].classList.add('active')
@@ -18,7 +19,7 @@ function comparesectionFunction(){
 }
 document.addEventListener('scroll',comparesectionFunction)
 
-// Synopsis
+// Synopsis area will appear when customer click to more detail button 
 const synopsis = document.getElementById('synopsis_sec')
 synopsis.style.display = 'none'
 let movies_syn = {
@@ -72,7 +73,6 @@ function showContent(event){
     trailer.src = movie.trailer;
     movie_syn_input.value = event.target.id;
     synopsis_sec.style.display = '';
-    // movie_showtime = movie.movieday + movie.hour
     createDetailContainer(movie.movieday);
     console.log('clicked')
     var buttons_time = document.querySelectorAll('.movie_hour')
@@ -80,7 +80,7 @@ function showContent(event){
     buttons_time.forEach(button=>{button.addEventListener('click', function(){hour(this)})})
     buttons_time.forEach(button=>{button.addEventListener('click', function(){total()})})
 }
-
+// create Time button along with synopsis that will match with the movie time schedule. 
 const createTimeButton = (time, index) => {
     let button = document.createElement('Button');
     button.setAttribute('class', 'btn btn-secondary movie_hour');
@@ -108,10 +108,10 @@ const createDetailContainer = (time)=>{
         detailContainer.append(detailButton);
     }
 }
-
+// Applying same event listeners for each "more details" button. 
 buttons.forEach(button => {button.addEventListener('click',(event)=>showContent(event))})
 
-
+// Function hour return full price or discount price base on day and time customer selected 
 function hour(obj) {
     day_info = obj.children[0].innerHTML
     day_value = day_info.substring(0 , day_info.indexOf(':'))
@@ -133,7 +133,7 @@ function seat_id_value(seat_id) {
     var seat_price = document.getElementById('seat[' + seat_id + ']')
     return document.getElementById('value_results_' + seat_id).innerHTML = seat_price.value   
 }
-
+// Function total calculate price base on number of seats customer selected and type of seat they select
 function total() {
     var seat_price_array = {
         STA: {
@@ -181,7 +181,7 @@ function total() {
     total_price = (typeof (price_STA) != 'undefined' ? price_STA : 0) + (typeof (price_STP) != 'undefined' ? price_STP : 0) + (typeof (price_STC) != 'undefined' ? price_STC : 0) + (typeof (price_FCA) != 'undefined' ? price_FCA : 0) + (typeof (price_FCP) != 'undefined' ? price_FCP : 0) + (typeof (price_FCC) != 'undefined' ? price_FCC : 0);
     document.getElementById('total').innerHTML = total_price.toFixed(2)
 }
-
+// Function to add value for input of movie dayh and movie hour 
 function addInputValue(obj) {
     day_info = obj.children[0].innerHTML
     day_value = day_info.substring(0 , day_info.indexOf(':'))
@@ -214,7 +214,7 @@ function addInputValue(obj) {
     console.log(movie_day)
     console.log(movie_hour)
 }
-
+// Check date of card
 function checkDate() {
     var today = new Date()
     var today_year = today.getFullYear()
@@ -227,7 +227,7 @@ function checkDate() {
     }
     document.getElementById('cust_expiry').min = min_expiry
     }
-
+// Function to validate if there is any blank information like seat not selected or movie day and hour not recognized
 function validateForm() {
     var movie_day_value = document.forms["booking-form"]["movie[day]"].value;
     var movie_hour_value = document.forms["booking-form"]["movie[hour]"].value;
