@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sephora Cosmestic</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="web.scss" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2913d5c9ac.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Vollkorn&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Coda+Caption:800&display=swap" rel="stylesheet">
+</head>
+<style>
+    html, body {
+     
+      margin: 0 auto;
+      overflow-x: hidden;
+    }
+  
+
+  </style>
+<body data-spy="scroll" data-target=".navbar">
+<!--Navigation bar -->
+    <nav class="navbar fixed-top navbar-expand-md navbar-light " style="background-color: black">
+        <a href="index.html" class="navbar-brand" style="color: white;font-family: 'Satisfy', cursive;
+        ">
+            <i class="fas fa-shopping-bag" style="margin-right: 5px"></i>
+            <strong style="font-size: 25px;">
+                Sephora
+            </strong></a>
+           
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myNavbar"
+            aria-controls="myNavbar" aria-expanded="false" aria-label="Toggle-navigation" style="text-align: center;">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse justify-content-stretch" id="myNavbar">
+            <ul class="navbar-nav ml-auto">
+                <div class="btn-group" style="padding-right: 15px;">
+                    <button class="btn btn-sm dropdown-toggle" style="border:solid;color: white;" type="button"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     <strong style="color:white;font-family: 'Vollkorn', serif;"> Sign in </strong>
+                    </button>
+                    <form method="POST" id="signin" class="dropdown-menu p-3" style="width:300px;font-family: 'Oswald', sans-serif;" >
+                        <div class="form-group" id="signin">
+                            <label for="Email">Email address</label>
+                            <input type="email" id="email" class="form-control" placeholder="Enter your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleDropdownFormPassword2">Password</label>
+                            <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="Password">
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="dropdownCheck2">
+                            <label class="form-check-label" for="dropdownCheck2">
+                            Remember me
+                            </label>
+                        </div>
+                        <button class="btn btn-primary">Sign in</button>
+                        </form>
+                    
+                  </div>
+                  <div class="btn-group" style="padding-right: 15px;" id >
+                    <button class="btn btn-sm dropdown-toggle" id="dropdown-content"  type="button"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     <strong style="color:white;font-family: 'Oswald', sans-serifs;"> Products </strong>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="width:150px;font-family: 'Oswald', sans-serif;background-color: white;">
+                        <a class="dropdown-item" href="lipstick.html" >Lipstick</a>
+                        <a class="dropdown-item" >Eyes</a>
+                        <a class="dropdown-item" >Face</a>
+                      </div>
+                    
+                  </div>
+
+                <a class="nav-item nav-link" href="service.html" style="color: ivory;font-family: 'Oswald', sans-serif;"><strong>On Sale</strong></a>
+
+                
+
+                <a class="nav-item nav-link" href="collection.html" style="color: ivory;font-family: 'Oswald', sans-serif;"><strong>Seasonal
+                        collection</strong></a>
+                <a class="nav-item nav-link" href="contact.html" style="color: ivory;font-family: 'Oswald', sans-serif;"><strong>Contact Us</strong></a>
+                
+        </ul>
+        </div>
+    </nav>
+    <!-- End of Navigation bar -->
+    <div>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="slider2-img">
+                        <div class="container">
+                            <div class="slider-info ">
+                                <h5 style="font-family: 'Coda Caption', sans-serif;"> <strong>Make up makes your beauty becomes natural but miracles</strong>
+                                </h5>
+                                <div class="bottom-info">
+                                    <p style="color: white"> <strong>
+                                            this is a paragraph</strong>
+                                    </p>
+                                </div>
+                                <div class="outs_more-buttn">
+                                    <a href="aboutus.html">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="slider1-img">
+                        <div class="container">
+                            <div class="slider-info ">
+                                <h5 style="font-family: 'Coda Caption', sans-serif;"> <strong>Lip - Eyes - Face</strong>
+                                </h5>
+                                <div class="bottom-info">
+                                    <p style="color: white"> <strong>
+                                            Let our product boost your beauty</strong>
+                                    </p>
+                                </div>
+                                <div class="outs_more-buttn">
+                                    <a href="aboutus.html">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="slider-img">
+                        <div class="container">
+                            <div class="slider-info text-center">
+                                <h5 style="font-family: 'Coda Caption', sans-serif;"> <strong>Want to be on trend ? </strong>
+                                </h5>
+                                <div class="bottom-info">
+                                    <p style="color: white"> <strong>
+                                            Explore many brands seasonal collection to be on top of the trend </strong>
+                                    </p>
+                                </div>
+                                <div class="outs_more-buttn">
+                                    <a href="aboutus.html">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <img src="test4.jpg" alt="picture">
+            </div>
+            <div class="col-sm-8">
+                <h2 class="text-center">
+                    <strong style="letter-spacing: 8px;font-family: 'Noto Sans JP', sans-serif;">OUR STORY</strong>
+                    <br><br>
+                </h2>
+                <p style="font-size: 25px;">It all started with a simple idea – natural looking makeup and a lipstick
+                    that looked like lips.</p> <br>
+                <p class="text-center" style="font-size: 30px;"><em> “The secret to beauty is simple: <br>
+                        be who you are.”</em></p>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <div>
+        <div class="container-fluid border-top border-bottom border-dark">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h2 style="letter-spacing: 5px; font-family: 'Raleway', sans-serif; padding-top: 15px ;">
+                        <strong>CHAPTER 1</strong>
+                    </h2>
+                </div>
+                <div class="col-sm-8">
+                    <h4 style="letter-spacing: 5px; font-family: 'Raleway', sans-serif; padding-top: 17px ;"> THE
+                        BEGINNING </h4>
+                </div>
+                <div class="col-sm-1">
+
+                    <i class="fas fa-chevron-down fa-2x" data-toggle="collapse" data-target="#demo"
+                        style="background-color: white; padding-top: 17px;"></i>
+
+                </div>
+            </div>
+            <div id="demo" class="collapse">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </div>
+        </div>
+        <div class="container-fluid  border-bottom border-dark">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h2 style="letter-spacing: 5px; font-family: 'Raleway', sans-serif; padding-top: 15px ;">
+                        <strong>CHAPTER 2</strong>
+                    </h2>
+                </div>
+                <div class="col-sm-8">
+                    <h4 style="letter-spacing: 5px; font-family: 'Raleway', sans-serif; padding-top: 17px ;"> NATURAL
+                        REVOLUTION </h4>
+                </div>
+                <div class="col-sm-1">
+                    <i class="fas fa-chevron-down fa-2x" data-toggle="collapse" data-target="#demo1"
+                        style="background-color: white; padding-top: 17px;"></i>
+                </div>
+            </div>
+            <div id="demo1" class="collapse">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </div>
+        </div>
+        <div class="container-fluid border-bottom border-dark">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h2 style="letter-spacing: 5px; font-family: 'Raleway', sans-serif; padding-top: 15px ;">
+                        <strong>CHAPTER 3</strong>
+                    </h2>
+                </div>
+                <div class="col-sm-8">
+                    <h4 style="letter-spacing: 5px; font-family: 'Raleway', sans-serif; padding-top: 17px ;"> PRETTY
+                        POWERFUL </h4>
+                </div>
+                <div class="col-sm-1">
+
+                    <i class="fas fa-chevron-down fa-2x" data-toggle="collapse" data-target="#demo2"
+                        style="background-color: white; padding-top: 17px;"></i>
+
+                </div>
+            </div>
+            <div id="demo2" class="collapse">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </div>
+        </div>
+
+    </div>
+    <div class="bs-example" style="margin-left: 25%;margin-right: 25%;border: black;">
+        <ul class="nav nav-tabs">
+            <li class="nav-item" style="color: black;font-family: 'Archivo Narrow', sans-serif">
+                <a href="#home" class="nav-link active" data-toggle="tab"><strong>TRENDING MAKEUP STYLE</strong></a>
+            </li>
+            <li class="nav-item">
+                <a href="#profile" class="nav-link" data-toggle="tab"><strong>INSPIRATION PHOTOS</strong></a>
+            </li>
+            <li class="nav-item">
+                <a href="#messages" class="nav-link" data-toggle="tab"><strong>NEW COLLECTIONS</strong></a>
+            </li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane fade show active" id="home">
+                <h4 class="mt-2">TRENDING MAKEUP STYLE</h4>
+                <hr style="color: black;">
+                
+            </div>
+            <div class="tab-pane fade" id="profile">
+                <h4 class="mt-2">INSPIRATION PHOTOS</h4>
+                <p>Vestibulum nec erat eu nulla rhoncus fringilla ut non neque. Vivamus nibh urna, ornare id gravida ut,
+                    mollis a magna. Aliquam porttitor condimentum nisi, eu viverra ipsum porta ut. Nam hendrerit
+                    bibendum turpis, sed molestie mi fermentum id. Aenean volutpat velit sem. Sed consequat ante in
+                    rutrum convallis. Nunc facilisis leo at faucibus adipiscing.</p>
+            </div>
+            <div class="tab-pane fade" id="messages">
+                <h4 class="mt-2">NEW COLLECTIONS</h4>
+                <p>Donec vel placerat quam, ut euismod risus. Sed a mi suscipit, elementum sem a, hendrerit velit. Donec
+                    at erat magna. Sed dignissim orci nec eleifend egestas. Donec eget mi consequat massa vestibulum
+                    laoreet. Mauris et ultrices nulla, malesuada volutpat ante. Fusce ut orci lorem. Donec molestie
+                    libero in tempus imperdiet. Cum sociis natoque penatibus et magnis.</p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <!-- Footer section-->
+    <footer>
+        <div class="footer-container-fluid" style="background-color: black;">
+            <div class="row">
+                <div class="col-sm-4" style="font-family: 'Vollkorn', serif;">
+                    
+                    <ul style="color: blanchedalmond;"> Shipping and Return </ul>
+                    <ul style="color: blanchedalmond;"> FAQs</ul>
+                </div>
+                <div class="col-sm-4" style="font-family: 'Vollkorn', serif;">
+                    <ul style="color: blanchedalmond;"> My ... </ul>
+                    <ul style="color: blanchedalmond;"> My account </ul>
+                    <ul style="color: blanchedalmond;"> My orders </ul>
+                </div>
+                <div class="col-sm-4" style="font-family: 'Vollkorn', serif; border-left: solid; border-color: white;">
+                    <div class="btn-group" style="padding-right: 15px;" id="footer-btn">
+                        <button class="btn btn-sm dropdown-toggle" style="border:solid;color: white;" type="button"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                         <strong style="color:white;font-family: 'Vollkorn', serif;"> Your Location </strong>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"id="footer-btn-menu">
+                            <a class="dropdown-item" >Europe</a>
+                            <a class="dropdown-item" >Asia</a>
+                            <a class="dropdown-item"> Middle East</a>
+                            <a class="dropdown-item" >Africa</a>
+                            <a class="dropdown-item"> Sub-Saharan Africa</a>
+                            <a class="dropdown-item" >North America </a>
+                            <a class="dropdown-item" >South America </a>
+                            <a class="dropdown-item"> The Caribbean</a>
+                            <a class="dropdown-item" >Australia and Oceania </a>
+                        </div>
+                        
+                      </div>
+                    <div class="text" style="padding-top: 20px">
+     
+                        <ul style="color: blanchedalmond;"> Call us </ul>
+                        <ul style="color: blanchedalmond;"> (+84) 799 864 076 </ul>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+
+
+</html>
