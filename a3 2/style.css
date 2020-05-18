@@ -1,0 +1,423 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+/* Navigation Bar */
+
+  #navigationbar {
+    background-color: #000;
+  }
+  #navigationbar a {
+    transition: background-color 0.25s, color 0.1s;
+    text-align: center;
+    margin-left: 20px;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    font-size: 27px;
+  }
+  #navigationbar a:hover,
+  #navigationbar .active {
+    background-color: rgb(151, 137, 137);
+    opacity: 100%;
+    color: white;
+  }
+  
+  header{
+    background-color:#F2F2F2; 
+    text-align:center;
+    padding:40px 0px; 
+    }
+    
+  header h1{
+    margin:0px;
+    font-size:26px; 
+    color:#414141; 
+    font-weight:1000;
+    font-family: 'Acme', sans-serif;
+  }
+  
+  nav a:hover{
+    background-color:#002e5b; 
+    color:wheat; 
+  }
+  nav a:active{
+    background-color: #002e5b;
+    color: wheat;
+  }
+  .space {
+    visibility: hidden;
+    top: -70px;
+    display: block;
+    position: relative;
+  }
+/* End Navigation Bar */
+
+/* The Modal (background) */
+.modal {
+display: none;
+
+padding-top: 10px;
+left: 10px;
+top: 10px;
+
+overflow: hidden;
+background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+
+background-color: #fefefe;
+margin: auto;
+padding: 0;
+
+}
+
+/* The Close Button */
+.close {
+color: white;
+position: absolute;
+top: 10px;
+right: 25px;
+font-size: 35px;
+font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+color: #999;
+text-decoration: none;
+cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides {
+display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+cursor: pointer;
+position: absolute;
+top: 30%;
+width: auto;
+padding: 16px;
+margin-top: -50px;
+color: lightblue;
+font-weight: bold;
+font-size: 20px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+user-select: none;
+-webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+color: #f2f2f2;
+font-size: 12px;
+padding: 8px 12px;
+position: absolute;
+top: 0;
+}
+
+/* Caption text */
+.caption-container {
+text-align: center;
+background-color: black;
+padding: 2px 16px;
+color: white;
+}
+
+img.demo {
+opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+opacity: 1;
+}
+
+img.hover-shadow {
+transition: 0.3s;
+}
+
+.hover-shadow:hover {
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.img-fluid{
+height: 500px;
+width: 800px;
+margin-left:20%;
+margin-right: 25%;
+}
+.demo-cursor{
+height: 340px;
+width:340px;
+
+}
+@media (max-width: 1440px) {
+#banneratmos {
+    width: 1220px;
+    min-height: auto;
+    margin-left: 5%;
+    
+    }
+}
+@media (max-width: 1280px) {
+    #banneratmos {
+    min-height: auto;
+    }
+}
+@media (max-width: 1080px) {
+    #banneratmos {
+    min-height: auto;
+    }
+@media (max-width: 991px) {
+    #banneratmos{
+    min-height: 580px;
+    }   
+}
+@media (max-width: 768px) {
+    #banneratmos {
+    min-height: 545px;
+    }
+    #nav-items{
+        width: 100%
+    }
+}
+}
+@media (max-width: 640px) {
+    #banneratmos {
+    min-height: 471px;
+    }
+    
+}
+@media (max-width: 600px) {
+    .inner_page-banner {
+    min-height: 195px;
+    }
+}
+
+@media (max-width: 480px) {
+    #banneratmos {
+    min-height: 436px;
+    }
+}
+
+
+@media (max-width: 384px) {
+    #banneratmos {
+    min-height: 419px;
+    }
+    
+}
+@media(max-width:375px){
+    #banneratmox{
+    min-height: auto;
+    width: 375px;
+}
+}
+/* End of Light box */
+#projectionandsound a:link{
+color: black;
+}
+#projectionandsound a:hover{
+color: white;
+}
+/*Jumbotron Chair*/
+#jumbotronchairspre{
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Mukta', sans-serif;
+
+}
+#jumbotronchairspre p{
+  font-weight: 300;
+}
+#seatpremiuminfo{
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Mukta', sans-serif;
+
+
+}
+#seatpremiuminfo{
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Mukta', sans-serif;
+
+
+}
+#jumbotronsoundandpro{
+
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Mukta', sans-serif;
+  margin-bottom:0px;
+  background-color: #BFBFBF;
+
+}
+/* Pricing section*/
+#price {
+  background-image: url(image/home-design.jpg);
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+.pricing {
+  display: inline-block;
+  
+  padding: 40px;
+  text-align: center;
+  min-width: 32%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.seat_type_standard {
+  background-color: #f7f7f7;
+  padding: 35px;
+  font-size: 35px;
+ 
+  border: solid 2px;
+  font-family: 'IM Fell French Canon SC', serif;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+}
+.seat_type_firstclass {
+  background-color: #f7f7f7;
+  padding: 35px;
+  font-size: 35px;
+ 
+  border: solid 2px;
+  font-family: 'IM Fell French Canon SC', serif;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+}
+.sale_price {
+  background-color: #393e46;
+  padding: 20px;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+.normal_price {
+  background-color: #5c636e;
+  padding: 20px;
+  color: white;
+  border-bottom-right-radius: 80%;
+  border-bottom-left-radius: 80%;
+  font-family: 'Roboto', sans-serif;
+}
+
+.price {
+  font-size: 40px;
+  color: red;
+  font-family: 'Roboto', sans-serif;
+}
+/* Now Showing section*/
+.movie-name{
+  font-family: 'IM Fell French Canon SC', serif;
+  margin-top: 15px;
+}
+.movie-schedule{
+  margin-top: 30px;
+  font-family: 'Oswald', sans-serif;
+  
+}
+.movie-info{
+  font-family: 'Oswald', sans-serif;
+}
+/* Synopsis */
+#synopsis{
+  background-color: rgb(47, 46, 56);
+  color: #f2f2f2;
+  padding-top: 40px;
+}
+#synopsis_sec {
+  background-color: #27496d;
+  color: white;
+  padding-bottom: 3%;
+}
+#synopsis_sec #movie_info {
+  padding: 2%;
+}
+#synopsis_sec #movie_info > p span {
+  font-size: 45px;
+}
+#synopsis_sec #movie_info p span:first-child {
+  float: left;
+  font-family: 'IM Fell French Canon SC', serif;
+
+}
+#synopsis_sec #movie_info p span:last-child {
+  float: right;
+  font-family: 'IM Fell French Canon SC', serif;
+
+}
+#synopsis #movie_info p {
+  font-size: 28px;
+  text-align: justify;
+  
+}
+#synopsis_sec iframe {
+  border: 2px solid #000;
+  box-shadow: 5px 10px #969696;
+}
+#standard-seat-order{
+  padding-left: 15px;
+  padding-right: 15px;
+  border: 3px solid #000;
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  padding-bottom: 15px;
+}
+#firstclass-seat-order{
+  padding-left: 15px;
+  border: 3px solid #000;
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  padding-bottom: 15px;
+}
+#movie_hour_{
+  font-family: 'Oswald', sans-serif;
+  font-size: 15px;
+}
+#customer-details{
+  padding-left: 15px;
+  padding-right: 15px;
+  border: 3px solid #000;
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  padding-bottom: 15px;
+  padding-top:20px;
+  text-align: center;
+}
+
+#total-decor{
+  border: 3px solid #000;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 30px;
+  text-align: center;
+}
+
+#orderbutton{
+  border: 3px solid #000;
+  font-size: 25px;
+  font-family: 'Oswald', sans-serif;
+}
